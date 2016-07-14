@@ -6,23 +6,15 @@ module.exports = function (grunt) {
     return require('./patternlab-config.json').paths;
   }
 
-    var CSS_LESS_FILES = {
-        'source/less/style.css': 'source/less/style.less',
-    };
-
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     less: {
-      development: {
-        options: {
-            paths: ['less'],
-            sourceMap: false,
-            outputSourceFiles: true,
-            sourceMapBasepath: path,
-        },
-        files: CSS_LESS_FILES
-      },
+      build: {
+        files: {
+          "source/css/style.css": "source/less/style.less"
+        }
+      }
     },
     concat: {
       options: {
@@ -104,6 +96,14 @@ module.exports = function (grunt) {
               // 'uglify',
               // 'cssmin'
           ]
+      },
+      styles: {
+        files: [ 'source/less/style.less' ],
+        tasks: [ 'less' ],
+        options: {
+          spawn: false,
+          livereload: true
+        }
       },
       all: {
         files: [
