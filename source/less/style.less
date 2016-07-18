@@ -27,8 +27,17 @@
  * TOC To Be Continued
  */
 /*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+@import "_reset.less"
+/*------------------------------------*\
     $VARIABLES
 \*------------------------------------*/
+@import "variables/_colors.less";
+@import "variables/_typography.less";
+@import "variables/_layout.less";
+@import "variables/_defaults.less";
+@import "variables/_breakpoints.less";
 /*------------------------------------*\
     $MIXINS
 \*------------------------------------*/
@@ -38,209 +47,17 @@
 /* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback
 	Usage: @include font-size(1, large);
 */
-/*------------------------------------*\
-    $RESET
-\*------------------------------------*/
-/* Border-Box http:/paulirish.com/2012/box-sizing-border-box-ftw/ */
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, legend, label, table, header, footer, nav, section, figure {
-  margin: 0;
-  padding: 0;
-}
-
-header, footer, nav, section, article, hgroup, figure {
-  display: block;
-}
 
 /*------------------------------------*\
     $GLOBAL ELEMENTS
 \*------------------------------------*/
+@import "_globals.less"
 /*------------------------------------*\
-    $GLOBAL CLASSES
+    $GLOBAL HELPER CLASSES
 \*------------------------------------*/
-/* Clearfix */
-.cf, .l-two-col, [role=main] {
-  *zoom: 1;
-}
+@import "_helpers.less"
 
-.cf:before, .l-two-col:before, [role=main]:before, .cf:after, .l-two-col:after, [role=main]:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
 
-.cf:after, .l-two-col:after, [role=main]:after {
-  clear: both;
-}
-
-/* Completely remove from the flow and screen readers. */
-.is-hidden {
-  display: none !important;
-  visibility: hidden !important;
-}
-
-/* Completely remove from the flow but leave available to screen readers. */
-.is-vishidden {
-  position: absolute !important;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
-/* Floats */
-.right {
-  float: right;
-  padding: 0 0 1rem 1rem;
-}
-
-.right-search {
-  float: right;
-  padding: 0 0 1rem 0;
-}
-
-.left {
-  float: left;
-  padding: 0 1rem 1rem 0;
-}
-
-/* Text-Align */
-.align-right {
-  text-align: right;
-}
-
-.align-center {
-  text-align: center;
-}
-
-.align-left {
-  text-align: left;
-}
-
-/* Display Classes */
-@media all and (max-width: 46.8em) {
-  .hide-small {
-    display: none;
-  }
-}
-
-@media all and (min-width: 46.8em) and (max-width: 50em) {
-  .hide-med {
-    display: none;
-  }
-}
-
-@media all and (min-width: 50em) {
-  .hide-large {
-    display: none;
-  }
-}
-
-@media all and (min-width: 66em) {
-  .hide-large-2 {
-    display: none;
-  }
-}
-
-.valid {
-  color: #089e00;
-}
-
-.error {
-  color: red;
-}
-
-body {
-  background: #fff;
-  font: 100%/1.5 "effra", helvetica, sans-serif;
-  -webkit-text-size-adjust: 100%;
-  color: #333333;
-}
-
-/* Links */
-a {
-  color: #333333;
-  text-decoration: none;
-  outline: 0;
-}
-a:hover, a:focus {
-  color: gray;
-}
-
-/* Headings */
-/*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
-h1, .alpha {
-  line-height: 1.2;
-}
-
-h2, .beta {
-  line-height: 1.2;
-}
-
-h3, .gamma {
-  line-height: 1.2;
-}
-
-/* Subheadings */
-.subheading {
-  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
-  font-weight: normal;
-}
-
-/* Text-Related Elements */
-p {
-  margin-bottom: 1rem;
-}
-
-/* Blockquote */
-blockquote {
-  font-style: italic;
-  border-left: 1px solid gray;
-  color: gray;
-  padding-left: 1rem;
-  margin-bottom: 1rem;
-}
-
-/* Horizontal Rule */
-hr {
-  border: 0;
-  height: 2px;
-  background: #eeeeee;
-  margin: 2rem 0;
-}
-
-abbr {
-  border-bottom: 1px dotted gray;
-  cursor: help;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* Definition Lists */
-dl {
-  overflow: hidden;
-  margin: 0 0 1rem;
-}
-
-dt {
-  font-weight: bold;
-}
-
-dd {
-  margin-left: 0;
-}
 
 /*------------------------------------*\
     $MEDIA ELEMENTS
@@ -812,7 +629,7 @@ td {
 \*------------------------------------*/
 /* Global Font Classes */
 .font-secondary {
-  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
+  font-family: @largo_seRif;
 }
 
 .intro {
@@ -821,7 +638,7 @@ td {
 }
 
 .pullquote {
-  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
+  font-family: @largo_seRif;
   font-size: 1.4375em;
 }
 
@@ -1280,7 +1097,7 @@ td {
 .acc-handle {
   background: #131313;
   color: white;
-  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
+  font-family: @largo_seRif;
   font-weight: bold;
   display: block;
   position: relative;
@@ -1416,9 +1233,9 @@ td {
 }
 
 .alert-error {
-	color: #F00;
-	border-color: #F00;
-	background: #ffbebe;
+	color: @error;
+	border-color: @error;
+	background: fade(@error, 50%);
 }
 
 
@@ -1467,7 +1284,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "effra", helvetica, sans-serif;
+  font-family: @largo_sans;
   color: #555555;
 }
 h1 {
@@ -1484,7 +1301,7 @@ input[type="search"] {
 .entry-content p,
 .entry-content ul,
 .entry-content ol {
-  font-family: "leitura-news", georgia, serif;
+  font-family: @largo_serif;
   font-weight: 300;
 }
 h1,
@@ -1632,7 +1449,7 @@ a:hover {
 }
 #menu-footer-navigation,
 #supplementary ul.menu {
-  font-family: "effra", helvetica, sans-serif;
+  font-family: @largo_sans;
 }
 #supplementary {
   border-bottom: none;
@@ -1773,7 +1590,7 @@ a:hover {
 .alert p {
   margin-bottom: 0;
   color: #fff;
-  font-family: "effra", helvetica, sans-serif;
+  font-family: @largo_sans;
   text-align: center;
 }
 .alert p a {
