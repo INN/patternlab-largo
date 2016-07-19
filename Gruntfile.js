@@ -98,7 +98,11 @@ module.exports = function (grunt) {
           ]
       },
       styles: {
-        files: [ 'source/less/style.less' ],
+        files: [ 
+          'source/less/style.less',
+          'source/less/*.less',
+          'source/less/**/*.less'
+        ],
         tasks: [ 'less' ],
         options: {
           spawn: false,

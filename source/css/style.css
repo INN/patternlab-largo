@@ -27,18 +27,6 @@
  * TOC To Be Continued
  */
 /*------------------------------------*\
-    $VARIABLES
-\*------------------------------------*/
-/*------------------------------------*\
-    $MIXINS
-\*------------------------------------*/
-/* CSS Transition
-	Usage: @include transition(width,0.3s,ease-out);
- */
-/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback
-	Usage: @include font-size(1, large);
-*/
-/*------------------------------------*\
     $RESET
 \*------------------------------------*/
 /* Border-Box http:/paulirish.com/2012/box-sizing-border-box-ftw/ */
@@ -85,10 +73,103 @@ figure {
   display: block;
 }
 /*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+/*  COLORS  */
+/* theme colors */
+/* secondary colors */
+/* theme neutrals */
+/* errors, alerts, etc */
+/*  FONTS  */
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/* CSS Transition
+	Usage: @include transition(width,0.3s,ease-out);
+ */
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback
+	Usage: @include font-size(1, large);
+*/
+/*------------------------------------*\
     $GLOBAL ELEMENTS
 \*------------------------------------*/
+body {
+  background: #fff;
+  -webkit-text-size-adjust: 100%;
+  font-family: "effra", helvetica, sans-serif;
+  color: #333333;
+}
+/* Links */
+a {
+  color: #333333;
+  text-decoration: none;
+  outline: 0;
+}
+a:hover,
+a:focus {
+  color: gray;
+}
+/* Headings */
+/*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
+h1,
+.alpha {
+  line-height: 1.2;
+}
+h2,
+.beta {
+  line-height: 1.2;
+}
+h3,
+.gamma {
+  line-height: 1.2;
+}
+/* Subheadings */
+.subheading {
+  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
+  font-weight: normal;
+}
+/* Text-Related Elements */
+p {
+  margin-bottom: 1rem;
+}
+/* Blockquote */
+blockquote {
+  font-style: italic;
+  border-left: 1px solid gray;
+  color: gray;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+/* Horizontal Rule */
+hr {
+  border: 0;
+  height: 2px;
+  background: #eeeeee;
+  margin: 2rem 0;
+}
+abbr {
+  border-bottom: 1px dotted gray;
+  cursor: help;
+}
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* Definition Lists */
+dl {
+  overflow: hidden;
+  margin: 0 0 1rem;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 0;
+}
 /*------------------------------------*\
-    $GLOBAL CLASSES
+    $GLOBAL HELPER CLASSES
 \*------------------------------------*/
 /* Clearfix */
 .cf,
@@ -172,85 +253,10 @@ figure {
   }
 }
 .valid {
-  color: #089e00;
+  color: #0FAE92;
 }
 .error {
-  color: red;
-}
-body {
-  background: #fff;
-  font: 100%/1.5 "effra", helvetica, sans-serif;
-  -webkit-text-size-adjust: 100%;
-  color: #333333;
-}
-/* Links */
-a {
-  color: #333333;
-  text-decoration: none;
-  outline: 0;
-}
-a:hover,
-a:focus {
-  color: gray;
-}
-/* Headings */
-/*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
-h1,
-.alpha {
-  line-height: 1.2;
-}
-h2,
-.beta {
-  line-height: 1.2;
-}
-h3,
-.gamma {
-  line-height: 1.2;
-}
-/* Subheadings */
-.subheading {
-  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
-  font-weight: normal;
-}
-/* Text-Related Elements */
-p {
-  margin-bottom: 1rem;
-}
-/* Blockquote */
-blockquote {
-  font-style: italic;
-  border-left: 1px solid gray;
-  color: gray;
-  padding-left: 1rem;
-  margin-bottom: 1rem;
-}
-/* Horizontal Rule */
-hr {
-  border: 0;
-  height: 2px;
-  background: #eeeeee;
-  margin: 2rem 0;
-}
-abbr {
-  border-bottom: 1px dotted gray;
-  cursor: help;
-}
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-/* Definition Lists */
-dl {
-  overflow: hidden;
-  margin: 0 0 1rem;
-}
-dt {
-  font-weight: bold;
-}
-dd {
-  margin-left: 0;
+  color: #DF4646;
 }
 /*------------------------------------*\
     $MEDIA ELEMENTS
@@ -1350,9 +1356,9 @@ td {
   background: #f9f9f9;
 }
 .alert-error {
-  color: #F00;
-  border-color: #F00;
-  background: #ffbebe;
+  color: #DF4646;
+  border-color: #DF4646;
+  background: rgba(223, 70, 70, 0.5);
 }
 /***********************
 INN.org style.css
@@ -1407,7 +1413,7 @@ input[type="search"] {
 .entry-content p,
 .entry-content ul,
 .entry-content ol {
-  font-family: "leitura-news", georgia, serif;
+  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
   font-weight: 300;
 }
 h1,
@@ -2087,3 +2093,21 @@ body.normal.page .stories .top-tag {
     display: none;
   }
 }
+/*------------------------------------*\
+    $ATOMS
+\*------------------------------------*/
+/* Headings */
+h1 {
+  color: #1C1C1C;
+  font-size: 44px;
+  font-family: "effra", helvetica, sans-serif;
+  line-height: 1;
+  font-weight: bold;
+  margin: 0 0 .5em 0;
+  padding-top: .5em;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+}
+/* Subheadings */
+/* Headings with Links */
+/* Paragraph */

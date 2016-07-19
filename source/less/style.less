@@ -35,7 +35,7 @@
 \*------------------------------------*/
 @import "variables/_colors.less";
 @import "variables/_typography.less";
-@import "variables/_layout.less";
+@import "variables/_layouts.less";
 @import "variables/_defaults.less";
 @import "variables/_breakpoints.less";
 /*------------------------------------*\
@@ -51,11 +51,13 @@
 /*------------------------------------*\
     $GLOBAL ELEMENTS
 \*------------------------------------*/
-@import "_globals.less"
+@import "_globals.less";
 /*------------------------------------*\
     $GLOBAL HELPER CLASSES
 \*------------------------------------*/
-@import "_helpers.less"
+@import "_helpers.less";
+
+
 
 
 
@@ -632,7 +634,7 @@ td {
 \*------------------------------------*/
 /* Global Font Classes */
 .font-secondary {
-  font-family: @largo_seRif;
+  font-family: @largo_serif;
 }
 
 .intro {
@@ -641,7 +643,7 @@ td {
 }
 
 .pullquote {
-  font-family: @largo_seRif;
+  font-family: @largo_serif;
   font-size: 1.4375em;
 }
 
@@ -1100,7 +1102,7 @@ td {
 .acc-handle {
   background: #131313;
   color: white;
-  font-family: @largo_seRif;
+  font-family: @largo_serif;
   font-weight: bold;
   display: block;
   position: relative;
@@ -1984,3 +1986,9 @@ body.normal.page .stories .top-tag {
     display: none;
   }
 }
+
+
+/*------------------------------------*\
+    $ATOMS
+\*------------------------------------*/
+@import "atoms/_text.less";
