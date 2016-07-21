@@ -90,12 +90,12 @@ module.exports = function (grunt) {
       less: {
           files: [
               path.resolve(paths().source.css + '**/*.css'),
-          ],
-          tasks: [
-              'less:development'
-              // 'uglify',
-              // 'cssmin'
-          ]
+          ]//,
+          // tasks: [
+          //     'less:development'
+          //     // 'uglify',
+          //     // 'cssmin'
+          // ]
       },
       styles: {
         files: [ 
