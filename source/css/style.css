@@ -288,7 +288,7 @@ form > div {
 }
 form ol,
 form ul {
-  list-style: none;
+  list-style: block;
   margin-left: 0;
 }
 fieldset {

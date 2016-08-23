@@ -1,14 +1,72 @@
+/******************************************************
+ * PATTERN LAB NODE
+ * EDITION-NODE-GRUNT
+ * The grunt wrapper around patternlab-node core, providing tasks to interact with the core library and move supporting frontend assets.
+******************************************************/
+
 module.exports = function (grunt) {
 
-  var path = require('path');
+  var path = require('path'),
+      argv = require('minimist')(process.argv.slice(2));
+
+  // load all grunt tasks
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-browser-sync');
+
+  /******************************************************
+   * PATTERN LAB CONFIGURATION
+  ******************************************************/
+
+  //read all paths from our namespaced config file
+  var config = require('./patternlab-config.json'),
+    pl = require('patternlab-node')(config);
 
   function paths() {
-    return require('./patternlab-config.json').paths;
+    return config.paths;
   }
 
-  // Project configuration.
+  function getConfiguredCleanOption() {
+    return config.cleanPublic;
+  }
+
+  grunt.registerTask('patternlab', 'create design systems with atomic design', function (arg) {
+
+    if (arguments.length === 0) {
+      pl.build(function(){}, getConfiguredCleanOption());
+    }
+
+    if (arg && arg === 'version') {
+      pl.version();
+    }
+
+    if (arg && arg === "patternsonly") {
+      pl.patternsonly(function(){},getConfiguredCleanOption());
+    }
+
+    if (arg && arg === "help") {
+      pl.help();
+    }
+
+    if (arg && arg === "starterkit-list") {
+      pl.liststarterkits();
+    }
+
+    if (arg && arg === "starterkit-load") {
+      pl.loadstarterkit(argv.kit);
+    }
+
+    if (arg && (arg !== "version" && arg !== "patternsonly" && arg !== "help" && arg !== "starterkit-list" && arg !== "starterkit-load")) {
+      pl.help();
+    }
+  });
+
+
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
+    /******************************************************
+     * LESS TASKS
+    ******************************************************/
     less: {
       build: {
         files: {
@@ -16,86 +74,31 @@ module.exports = function (grunt) {
         }
       }
     },
-    concat: {
-      options: {
-        stripBanners: true,
-        banner: '/* \n * <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy") %> \n * \n * <%= pkg.author %>, and the web community.\n * Licensed under the <%= pkg.license %> license. \n * \n * Many thanks to Brad Frost and Dave Olsen for inspiration, encouragement, and advice. \n *\n */\n\n',
-      },
-      patternlab: {
-        src: './core/lib/patternlab.js',
-        dest: './core/lib/patternlab.js'
-      },
-      object_factory: {
-        src: './core/lib/object_factory.js',
-        dest: './core/lib/object_factory.js'
-      },
-      lineage: {
-        src: './core/lib/lineage_hunter.js',
-        dest: './core/lib/lineage_hunter.js'
-      },
-      media_hunter: {
-        src: './core/lib/media_hunter.js',
-        dest: './core/lib/media_hunter.js'
-      },
-      patternlab_grunt: {
-        src: './core/lib/patternlab_grunt.js',
-        dest: './core/lib/patternlab_grunt.js'
-      },
-      patternlab_gulp: {
-        src: './core/lib/patternlab_gulp.js',
-        dest: './core/lib/patternlab_gulp.js'
-      },
-      parameter_hunter: {
-        src: './core/lib/parameter_hunter.js',
-        dest: './core/lib/parameter_hunter.js'
-      },
-      pattern_exporter: {
-        src: './core/lib/pattern_exporter.js',
-        dest: './core/lib/pattern_exporter.js'
-      },
-      pattern_assembler: {
-        src: './core/lib/pattern_assembler.js',
-        dest: './core/lib/pattern_assembler.js'
-      },
-      pseudopattern_hunter: {
-        src: './core/lib/pseudopattern_hunter.js',
-        dest: './core/lib/pseudopattern_hunter.js'
-      },
-      list_item_hunter: {
-        src: './core/lib/list_item_hunter.js',
-        dest: './core/lib/list_item_hunter.js'
-      },
-      style_modifier_hunter: {
-        src: './core/lib/style_modifier_hunter.js',
-        dest: './core/lib/style_modifier_hunter.js'
-      }
-    },
+    /******************************************************
+     * COPY TASKS
+    ******************************************************/
     copy: {
       main: {
         files: [
-          { expand: true, cwd: path.resolve(paths().source.js), src: '*.js', dest: path.resolve(paths().public.js) },
+          { expand: true, cwd: path.resolve(paths().source.js), src: '**/*.js', dest: path.resolve(paths().public.js) },
           { expand: true, cwd: path.resolve(paths().source.css), src: '*.css', dest: path.resolve(paths().public.css) },
-          { expand: true, cwd: path.resolve(paths().source.images), src: ['**/*.png', '**/*.jpg', '**/*.gif', '**/*.jpeg'], dest: path.resolve(paths().public.images) },
+          { expand: true, cwd: path.resolve(paths().source.images), src: '*', dest: path.resolve(paths().public.images) },
           { expand: true, cwd: path.resolve(paths().source.fonts), src: '*', dest: path.resolve(paths().public.fonts) },
-          { expand: true, cwd: path.resolve(paths().source.data), src: 'annotations.js', dest: path.resolve(paths().public.data) }
-        ]
-      },
-      styleguide: {
-        files: [
-          { expand: true, cwd: path.resolve(paths().source.styleguide), src: ['*.*', '**/*.*'], dest: path.resolve(paths().public.styleguide) }
+          { expand: true, cwd: path.resolve(paths().source.root), src: 'favicon.ico', dest: path.resolve(paths().public.root) },
+          { expand: true, cwd: path.resolve(paths().source.styleguide), src: ['*', '**'], dest: path.resolve(paths().public.root) },
+          // slightly inefficient to do this again - I am not a grunt glob master. someone fix
+          { expand: true, flatten: true, cwd: path.resolve(paths().source.styleguide, 'styleguide', 'css', 'custom'), src: '*.css)', dest: path.resolve(paths().public.styleguide, 'css') }
         ]
       }
     },
+    /******************************************************
+     * SERVER AND WATCH TASKS
+    ******************************************************/
     watch: {
       less: {
           files: [
               path.resolve(paths().source.css + '**/*.css'),
-          ]//,
-          // tasks: [
-          //     'less:development'
-          //     // 'uglify',
-          //     // 'cssmin'
-          // ]
+          ]
       },
       styles: {
         files: [ 
@@ -113,18 +116,15 @@ module.exports = function (grunt) {
         files: [
           path.resolve(paths().source.css + '**/*.css'),
           path.resolve(paths().source.styleguide + 'css/*.css'),
-          path.resolve(paths().source.patterns + '**/*.mustache'),
-          path.resolve(paths().source.patterns + '**/*.json'),
+          path.resolve(paths().source.patterns + '**/*'),
           path.resolve(paths().source.fonts + '/*'),
           path.resolve(paths().source.images + '/*'),
           path.resolve(paths().source.data + '*.json'),
-          path.resolve(paths().source.js + '/*.js')
+          path.resolve(paths().source.js + '/*.js'),
+          path.resolve(paths().source.root + '/*.ico')
         ],
         tasks: ['default', 'bsReload:css']
       }
-    },
-    nodeunit: {
-      all: ['test/*_tests.js']
     },
     browserSync: {
       dev: {
@@ -168,32 +168,17 @@ module.exports = function (grunt) {
         }
       }
     },
-    eslint: {
-      options: {
-        configFile: './.eslintrc'
-      },
-      target: ['./core/lib/*']
-    },
     bsReload: {
       css: path.resolve(paths().public.root + '**/*.css')
     }
   });
 
-  // load all grunt tasks
-  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+  /******************************************************
+   * COMPOUND TASKS
+  ******************************************************/
 
-  grunt.loadNpmTasks('grunt-contrib-less');
-
-  //load the patternlab task
-  grunt.task.loadTasks('./core/lib/');
-
-  grunt.registerTask('default', ['patternlab', 'copy:main', 'copy:styleguide']);
-
-  //travis CI task
-  grunt.registerTask('travis', ['nodeunit', 'eslint', 'patternlab']);
-
-  grunt.registerTask('serve', ['patternlab', 'copy:main', 'copy:styleguide', 'browserSync', 'watch:all']);
-
-  grunt.registerTask('build', ['nodeunit', 'eslint', 'concat']);
+  grunt.registerTask('default', ['patternlab', 'copy:main']);
+  grunt.registerTask('patternlab:watch', ['patternlab', 'copy:main', 'watch']);
+  grunt.registerTask('patternlab:serve', ['patternlab', 'copy:main', 'browserSync', 'watch']);
 
 };
