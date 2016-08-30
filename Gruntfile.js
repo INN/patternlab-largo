@@ -169,7 +169,7 @@ module.exports = function (grunt) {
       }
     },
     bsReload: {
-      css: path.resolve(paths().public.root + '**/*.css')
+      css: path.resolve(paths().source.root + '**/*.css')
     }
   });
 

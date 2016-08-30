@@ -2098,76 +2098,45 @@ body.normal.page .stories .top-tag {
 \*------------------------------------*/
 /* Headings */
 h1 {
-  color: #1C1C1C;
   font-size: 3.5em;
-  font-family: "effra", helvetica, sans-serif;
-  line-height: 1;
-  font-weight: bold;
-  margin: 0 0 .5em 0;
-  padding-top: .5em;
-  text-align: center;
-  text-rendering: optimizeLegibility;
+  margin-bottom: 24px;
 }
 h2 {
-  color: #777777;
   font-size: 2.5em;
-  font-family: "effra", helvetica, sans-serif;
-  font-weight: bold;
-  line-height: 1;
   margin-bottom: 24px;
-  text-rendering: optimizeLegibility;
-  text-align: center;
 }
 h3 {
-  color: #777777;
   font-size: 2em;
-  font-family: "effra", helvetica, sans-serif;
-  font-weight: bold;
-  line-height: 1;
   margin-bottom: 24px;
-  text-rendering: optimizeLegibility;
-  text-align: center;
 }
 h4 {
-  color: #777777;
   font-size: 1.5em;
-  font-family: "effra", helvetica, sans-serif;
-  font-weight: bold;
-  line-height: 1;
   margin-bottom: 24px;
-  text-rendering: optimizeLegibility;
-  text-align: center;
 }
 h5 {
-  color: #777777;
   font-size: 1em;
-  font-family: "effra", helvetica, sans-serif;
-  font-weight: bold;
-  line-height: 1;
   margin-bottom: 24px;
-  text-rendering: optimizeLegibility;
-  text-align: center;
 }
 h6 {
-  color: #777777;
   font-size: .75em;
+  margin-bottom: 24px;
+}
+.heading {
+  color: #1C1C1C;
   font-family: "effra", helvetica, sans-serif;
-  font-weight: bold;
   line-height: 1;
   margin-bottom: 24px;
-  text-rendering: optimizeLegibility;
+  font-weight: bold;
   text-align: center;
 }
 /* Subheadings */
-h3.subheading {
+.subheading {
   color: #777777;
-  font-size: 2em;
   font-family: "effra", helvetica, sans-serif;
   font-weight: none;
   line-height: 1;
-  margin-bottom: 12px;
+  margin-bottom: 24px;
   text-align: left;
-  text-rendering: optimizeLegibility;
 }
 /* Heading Top Tag */
 h5.top-date {
@@ -2201,14 +2170,16 @@ h5.byline {
   text-decoration: none;
 }
 /* Headings with Links */
-h3.link {
-  color: #777777;
-  font-size: 2em;
+a {
+  color: #1C1C1C;
   font-family: "effra", helvetica, sans-serif;
   line-height: 1;
-  margin-bottom: 12px;
   text-align: left;
-  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  color: #09C9FF;
   text-decoration: underline;
 }
 /* Paragraph */
@@ -2221,6 +2192,46 @@ p {
   text-align: left;
   text-rendering: optimizeLegibility;
 }
+p.font-secondary {
+  font-family: "effra", helvetica, sans-serif;
+}
+/* Block Quote */
+.blockquote {
+  padding: 5px 15px 5px 30px;
+  margin: 24px;
+  border-left: 5px solid #ddd;
+}
+.blockquote p {
+  font-size: 1em;
+  font-style: normal;
+  margin: 12px 0;
+}
+/* Caption */
+p.caption {
+  color: neutral4;
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 5px 0 0;
+}
+/* Lists */
+ul li,
+ol li {
+  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
+  font-size: 1em;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+ul li li,
+ol li li {
+  margin-top: 8px;
+}
+dl {
+  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
+  font-size: 1em;
+  margin-bottom: 12px;
+  line-height: 2;
+}
+/* Buttons */
 /*
 p.description {
 	color: @neutral2;
