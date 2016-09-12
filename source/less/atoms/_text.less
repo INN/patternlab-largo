@@ -47,7 +47,7 @@ h6 {
 	font-weight:none;
 	line-height: 1;
 	margin-bottom: 24px;
-	text-align: left;
+	text-align: center;
 }
 
 /* Heading Top Tag */
@@ -64,7 +64,6 @@ h5.top-date {
 }
 
 h5.top-tag {
-	color: @neutral4;
 	font-family: @largo_sans;
 	font-size: 1em;
 	line-height: 1;
@@ -72,17 +71,23 @@ h5.top-tag {
 	text-decoration: none;
 	text-align: left;
 	text-transform: uppercase;
+	a {
+		color: @neutral4;
+	}
 }
 
-h5.byline  {
-	color: @neutral2;
+h5.byline {
 	font-family: @largo_sans;
 	font-size: 1em;
-	font-style: normal;
 	line-height: 1;
 	margin-bottom: 24px;
 	text-align: left;
 	text-decoration: none;
+	a {
+		color: @neutral2;
+		font-weight: bold;
+		font-style: normal;	
+	}
 }
 
 /* Headings with Links */
@@ -93,7 +98,6 @@ a {
 	line-height: 1;
 	text-align: left;
 	text-decoration: none;
-	font-weight: 500;
 }
 
 a:hover {
@@ -105,7 +109,7 @@ a:hover {
 
 p {
 	color: @neutral2;
-	font-size: 1.2em;
+	font-size: 1em;
 	font-family: @largo_serif;
 	line-height: 1.5;
 	margin-bottom: 24px;
@@ -115,6 +119,12 @@ p {
 
 p.font-secondary {
 	font-family: @largo_sans;
+}
+
+p.intro {
+	font-size:1.5em;
+	color:@neutral3;
+	font-weight:normal;
 }
 
 /* Block Quote */
@@ -158,6 +168,75 @@ dl {
 
 /* Buttons */
 
+a.btn:hover {
+	text-decoration: none;
+}
+
+.btn.alternate {
+	background-color: @accent5;
+	color: white;
+}
+
+.btn.alternate:hover {
+	background-color: #df6807;
+	color: white;
+}
+
+.btn.next {
+	background-color: #e6e6e6;
+	color: black;
+}
+
+.btn.next:hover {
+	background-color: #a6a6a6;
+	color:white;
+}
+
+/* Avatar */
+.avatar {
+	float:left;
+	margin:5px 15px 10px 0;
+	padding: 4px;
+	border: 1px solid #ddd;
+}
+
+/* Byline */
+.byline {
+	font-style: normal;
+	a {
+		font-weight:bold;
+	}
+}
+.about h4{
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	font-size:20px;
+	font-weight: bold;
+	color:@neutral1;
+}
+.author-box p{
+	font-family: @largo_sans;
+}
+
+li.author-posts-link {
+	font-size: 13px;
+	background-color: #484848;
+	padding: 3px 10px;
+	font-weight:bold;
+	a {
+		color:white;
+	}
+}
+
+.author-posts-link a:hover {
+	text-decoration: none;
+}
+
+li.author-posts-link:hover {
+	background-color: #888;
+}
+
+/* Block Hero */
 
 
 /*

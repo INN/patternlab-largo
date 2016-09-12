@@ -77,6 +77,7 @@ figure {
 \*------------------------------------*/
 /*  COLORS  */
 /* theme colors */
+/* cmyk colors */
 /* secondary colors */
 /* theme neutrals */
 /* errors, alerts, etc */
@@ -2136,7 +2137,7 @@ h6 {
   font-weight: none;
   line-height: 1;
   margin-bottom: 24px;
-  text-align: left;
+  text-align: center;
 }
 /* Heading Top Tag */
 h5.top-date {
@@ -2150,7 +2151,6 @@ h5.top-date {
   text-rendering: optimizeLegibility;
 }
 h5.top-tag {
-  color: #AAAAAA;
   font-family: "effra", helvetica, sans-serif;
   font-size: 1em;
   line-height: 1;
@@ -2159,15 +2159,21 @@ h5.top-tag {
   text-align: left;
   text-transform: uppercase;
 }
+h5.top-tag a {
+  color: #AAAAAA;
+}
 h5.byline {
-  color: #777777;
   font-family: "effra", helvetica, sans-serif;
   font-size: 1em;
-  font-style: normal;
   line-height: 1;
   margin-bottom: 24px;
   text-align: left;
   text-decoration: none;
+}
+h5.byline a {
+  color: #777777;
+  font-weight: bold;
+  font-style: normal;
 }
 /* Headings with Links */
 a {
@@ -2176,7 +2182,6 @@ a {
   line-height: 1;
   text-align: left;
   text-decoration: none;
-  font-weight: 500;
 }
 a:hover {
   color: #09C9FF;
@@ -2185,7 +2190,7 @@ a:hover {
 /* Paragraph */
 p {
   color: #777777;
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
   line-height: 1.5;
   margin-bottom: 24px;
@@ -2194,6 +2199,11 @@ p {
 }
 p.font-secondary {
   font-family: "effra", helvetica, sans-serif;
+}
+p.intro {
+  font-size: 1.5em;
+  color: #909799;
+  font-weight: normal;
 }
 /* Block Quote */
 .blockquote {
@@ -2232,6 +2242,65 @@ dl {
   line-height: 2;
 }
 /* Buttons */
+a.btn:hover {
+  text-decoration: none;
+}
+.btn.alternate {
+  background-color: #F77710;
+  color: white;
+}
+.btn.alternate:hover {
+  background-color: #df6807;
+  color: white;
+}
+.btn.next {
+  background-color: #e6e6e6;
+  color: black;
+}
+.btn.next:hover {
+  background-color: #a6a6a6;
+  color: white;
+}
+/* Avatar */
+.avatar {
+  float: left;
+  margin: 5px 15px 10px 0;
+  padding: 4px;
+  border: 1px solid #ddd;
+}
+/* Byline */
+.byline {
+  font-style: normal;
+}
+.byline a {
+  font-weight: bold;
+}
+.about h4 {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1C1C1C;
+}
+.author-box p {
+  font-family: "effra", helvetica, sans-serif;
+}
+li.author-posts-link {
+  font-size: 13px;
+  background-color: #484848;
+  padding: 3px 10px;
+  font-weight: bold;
+}
+li.author-posts-link a {
+  color: white;
+}
+.author-posts-link a:hover {
+  text-decoration: none;
+}
+li.author-posts-link:hover {
+  background-color: #888;
+}
+/* Block Hero */
 /*
 p.description {
 	color: @neutral2;
