@@ -39,7 +39,15 @@ h6 {
 	text-align:center;
 }
 
-/* Subheadings */
+/* Logo */
+
+@media all and (min-width: 46.8em) {
+  .logo {
+    max-width: 19rem;
+  }
+}
+
+/* Subheading*/
 
 .subheading {
 	color: @neutral2;
@@ -98,11 +106,15 @@ a {
 	line-height: 1;
 	text-align: left;
 	text-decoration: none;
+	font-weight:bold;
+	&:hover {
+		color: @primary;
+		text-decoration: underline;
+	}
 }
 
 a:hover {
-	color: @primary;
-	text-decoration: underline;
+	
 }
 
 /* Paragraph */
@@ -125,6 +137,40 @@ p.intro {
 	font-size:1.5em;
 	color:@neutral3;
 	font-weight:normal;
+}
+
+p.error, .valid, .warning, .information {
+	font-family: @largo_sans;
+	font-weight: bold;
+}
+
+p.valid {
+	color: @primary;
+}
+
+p.warning {
+	color: @accent5;
+}
+
+p.information {
+	color: @accent2;
+}
+/* Display Classes */
+
+@media all and (max-width: 46.8em) {
+  .hide-small {
+    display: none;
+  }
+}
+@media all and (min-width: 46.8em) and (max-width: 50em) {
+  .hide-med {
+    display: none;
+  }
+}
+@media all and (min-width: 50em) {
+  .hide-large {
+    display: none;
+  }
 }
 
 /* Block Quote */
@@ -166,6 +212,14 @@ dl {
 	line-height: 2;
 }
 
+.icons-inline-list li {
+	color:@primary;
+}
+
+.icons.inline-list li {
+	color:@primary;
+}
+
 /* Buttons */
 
 a.btn:hover {
@@ -175,21 +229,31 @@ a.btn:hover {
 .btn.alternate {
 	background-color: @accent5;
 	color: white;
-}
-
-.btn.alternate:hover {
-	background-color: #df6807;
-	color: white;
+	&:hover {
+		background-color: #df6807;
+	}
 }
 
 .btn.next {
 	background-color: #e6e6e6;
 	color: black;
+	&:hover {
+		background-color: #a6a6a6;
+		color:white;
+	}
 }
 
-.btn.next:hover {
-	background-color: #a6a6a6;
+.more-by-author{
+	font-size: 13px;
+	background-color: #484848;
+	padding: 3px 10px;
+	font-weight:bold;
 	color:white;
+	&:hover {
+		text-decoration: none;
+		background-color: #888;
+		color:white;
+	}
 }
 
 /* Avatar */
@@ -218,27 +282,43 @@ a.btn:hover {
 	font-family: @largo_sans;
 }
 
-li.author-posts-link {
-	font-size: 13px;
-	background-color: #484848;
-	padding: 3px 10px;
+/* Blocks */
+div.thumbnail-img {
+	float:right;
+	margin: 0 0 10px 20px;
+}
+
+@media all and (max-width: 46.8em) {
+div.thumbnail-img {
+	max-width: 50%;
+}
+}
+
+.entry-content h5 {
+	margin-bottom: 4.8px;
+}
+
+.entry-content h4 {
+	margin-bottom: .5em;
+}
+
+.headline {
+	color: @neutral1;
+	font-family: @largo_sans;
+	line-height: 1;
+	margin-bottom: 24px;
 	font-weight:bold;
-	a {
+}
+
+.block-hero .b-text {
+	padding: 16rem;
+	background: rgba(255, 255, 255, 0.5);
+	> .headline {
 		color:white;
+		text-align: center;
+		text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.65);
 	}
 }
-
-.author-posts-link a:hover {
-	text-decoration: none;
-}
-
-li.author-posts-link:hover {
-	background-color: #888;
-}
-
-/* Block Hero */
-
-
 /*
 p.description {
 	color: @neutral2;
