@@ -221,6 +221,19 @@ dl {
 }
 
 /* Buttons */
+.btn, .newsletter-submit {
+  text-shadow: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 12px 24px;
+  background-color: @primary;
+  color: #fff;
+  border-radius: 0;
+  &:hover {
+  	text-decoration: none;
+  }
+}
 
 a.btn:hover {
 	text-decoration: none;
@@ -254,6 +267,22 @@ a.btn:hover {
 		background-color: #888;
 		color:white;
 	}
+}
+
+.inline-form input[type=submit],
+.inline-form button,
+.inline-form .btn {
+  font-size: 0.875em;
+  padding: 0.65rem 1.3rem;
+  background: @primary;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: auto;
+  &:hover {
+  	background-color:#00b5e8;
+  }
 }
 
 /* Avatar */
@@ -319,6 +348,51 @@ div.thumbnail-img {
 		text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.65);
 	}
 }
+
+/* Newsletter */
+
+.inline-container input {
+	float: left;
+	margin-right: 6px;
+	padding: 12px 10px;
+	width: 400px;
+}
+
+button.newsletter-submit {
+	padding: 14.5px 10px;
+	position: relative;
+	width: 200px;
+}
+
+fieldset {
+	> h3 {
+	font-weight:bold;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+	}
+	> p {
+		font-family: @largo_sans;
+	}
+}
+
+/* Navigation */
+nav.nav {
+	float: left;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	width: 100%;
+	li {
+		margin-bottom: 0px;
+	}
+}
+
+nav>ul>li>a:hover {
+	text-decoration: none;
+	color: @neutral1;
+	background-color: #f2f2f2
+}
+
+
 /*
 p.description {
 	color: @neutral2;
