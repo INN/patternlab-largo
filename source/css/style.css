@@ -2130,12 +2130,6 @@ h6 {
   font-weight: bold;
   text-align: center;
 }
-/* Logo */
-@media all and (min-width: 46.8em) {
-  .logo {
-    max-width: 19rem;
-  }
-}
 /* Subheading*/
 .subheading {
   color: #777777;
@@ -2228,21 +2222,12 @@ p.warning {
 p.information {
   color: #0FAE92;
 }
-/* Display Classes */
-@media all and (max-width: 46.8em) {
-  .hide-small {
-    display: none;
-  }
+p#donate {
+  font-size: 1.2em;
 }
-@media all and (min-width: 46.8em) and (max-width: 50em) {
-  .hide-med {
-    display: none;
-  }
-}
-@media all and (min-width: 50em) {
-  .hide-large {
-    display: none;
-  }
+p#donate a {
+  font-weight: normal;
+  color: #09C9FF;
 }
 /* Block Quote */
 .blockquote {
@@ -2262,31 +2247,33 @@ p.caption {
   line-height: 1.5;
   margin: 5px 0 0;
 }
-/* Lists */
-ul li,
-ol li {
-  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
-  font-size: 1em;
-  margin-bottom: 12px;
-  line-height: 1.5;
+/* Byline */
+.byline {
+  font-style: normal;
 }
-ul li li,
-ol li li {
-  margin-top: 8px;
+.byline a {
+  font-weight: bold;
 }
-dl {
-  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
-  font-size: 1em;
-  margin-bottom: 12px;
-  line-height: 2;
+.about h4 {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: #1C1C1C;
 }
-.icons-inline-list li {
-  color: #09C9FF;
+.author-box p {
+  font-family: "effra", helvetica, sans-serif;
 }
-.icons.inline-list li {
-  color: #09C9FF;
-}
-/* Buttons */
+/*
+p.description {
+	color: @neutral2;
+	font-size: 16px;
+	font-family: @largo_serif;
+	line-height: 1.5;
+	margin-bottom: 24px;
+	text-align: left;
+	text-rendering:optimizeLegibility;
+} */
 .btn,
 .newsletter-submit {
   text-shadow: none;
@@ -2311,6 +2298,7 @@ a.btn:hover {
 }
 .btn.alternate:hover {
   background-color: #df6807;
+  color: white;
 }
 .btn.next {
   background-color: #e6e6e6;
@@ -2338,7 +2326,7 @@ a.btn:hover {
   font-size: 0.875em;
   padding: 0.65rem 1.3rem;
   background: #09C9FF;
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   z-index: 1;
@@ -2349,6 +2337,56 @@ a.btn:hover {
 .inline-form .btn:hover {
   background-color: #00b5e8;
 }
+button.newsletter-submit {
+  padding: 1em 1.5rem;
+}
+button.search-submit {
+  position: absolute;
+}
+@media all and (max-width: 46.8em) {
+  .hide-small {
+    display: none;
+  }
+}
+@media all and (min-width: 46.8em) and (max-width: 50em) {
+  .hide-med {
+    display: none;
+  }
+}
+@media all and (min-width: 50em) {
+  .hide-large {
+    display: none;
+  }
+}
+ul li,
+ol li {
+  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
+  font-size: 1em;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+ul li li,
+ol li li {
+  margin-top: 8px;
+}
+dl {
+  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
+  font-size: 1em;
+  margin-bottom: 12px;
+  line-height: 2;
+}
+.icons-inline-list li {
+  color: #09C9FF;
+}
+.icons.inline-list li {
+  color: #09C9FF;
+}
+/* Logo */
+@media all and (min-width: 46.8em) {
+  .logo {
+    max-width: 19rem;
+  }
+}
 /* Avatar */
 .avatar {
   float: left;
@@ -2356,24 +2394,114 @@ a.btn:hover {
   padding: 4px;
   border: 1px solid #ddd;
 }
-/* Byline */
-.byline {
-  font-style: normal;
+/*Donation Form*/
+label.gfield_label {
+  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
+  font-size: 0.875em;
 }
-.byline a {
-  font-weight: bold;
+input[name="input_1"] {
+  width: 30%;
 }
-.about h4 {
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: bold;
-  color: #1C1C1C;
+input[name="input_2"] {
+  width: 48.7%;
 }
-.author-box p {
+input[name="input_3"] {
+  width: 98.5%;
+}
+li#form-4 {
+  margin-top: 48px;
+}
+/*Checkboxes*/
+#credit-card-fee label {
+  margin: 4px 0 0 10px;
+  max-width: 95%;
+  font-size: 14px;
+}
+#credit-card-fee input {
+  margin-right: 1em;
+}
+/*Radio Buttons*/
+ul.donate-now {
+  position: relative;
+  display: inline;
+  z-index: 100;
+  margin-left: 6px;
+}
+.donate-now li {
+  display: inline;
+  margin-right: 12px;
+  width: auto;
+  padding: 0;
+  overflow: hidden;
+}
+.donate-now input[type="radio"] {
+  display: none;
+}
+.donate-now label {
+  padding: 7px 24px;
+  margin: 0;
+  background-color: #09C9FF;
+  font-size: 18px;
   font-family: "effra", helvetica, sans-serif;
+  color: white;
+  display: inline-block;
 }
-/* Blocks */
+div.radio-buttons .donate-now input[type="radio"]:checked + label {
+  background-color: #F77710;
+}
+/*.donate-now li {
+  float:left;
+  margin: 0 5px 0 0;
+  width: 130px;
+  height:45px;
+  position: relative;
+  background-color: @primary;
+  color:white;
+  font-family: @largo_sans;
+  vertical-align: middle;
+}
+
+.donate-now label, .donate-now input {
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.donate-now input[type="radio"] {
+  visibility: hidden;
+}
+
+.donate-now input[type="radio"]:checked + label {
+  background-color: @accent5;
+}*/
+/*input#per-year {
+  display: none;
+}*/
+/*Select Menu*/
+select {
+  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  width: 47%;
+  height: 41px;
+}
+optgroup {
+  font-size: 16px;
+}
+/*input[name=two-inputs-one-line] {
+  width:50%;
+}*/
+.first-name,
+.last-name {
+  display: inline-block;
+  width: 50%;
+  padding-right: 14px;
+}
 div.thumbnail-img {
   float: right;
   margin: 0 0 10px 20px;
@@ -2405,7 +2533,21 @@ div.thumbnail-img {
   text-align: center;
   text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.65);
 }
-/* Newsletter */
+/* Navigation */
+nav.nav {
+  float: left;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  width: 100%;
+}
+nav.nav li {
+  margin-bottom: 0px;
+}
+nav > ul > li > a:hover {
+  text-decoration: none;
+  color: #1C1C1C;
+  background-color: #f2f2f2;
+}
 .inline-container input {
   float: left;
   margin-right: 6px;
@@ -2425,28 +2567,3 @@ fieldset > h3 {
 fieldset > p {
   font-family: "effra", helvetica, sans-serif;
 }
-/* Navigation */
-nav.nav {
-  float: left;
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
-  width: 100%;
-}
-nav.nav li {
-  margin-bottom: 0px;
-}
-nav > ul > li > a:hover {
-  text-decoration: none;
-  color: #1C1C1C;
-  background-color: #f2f2f2;
-}
-/*
-p.description {
-	color: @neutral2;
-	font-size: 16px;
-	font-family: @largo_serif;
-	line-height: 1.5;
-	margin-bottom: 24px;
-	text-align: left;
-	text-rendering:optimizeLegibility;
-} */

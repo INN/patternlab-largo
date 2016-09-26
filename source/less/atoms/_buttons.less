@@ -1,5 +1,18 @@
 
-/* Buttons */
+.btn, .newsletter-submit {
+  text-shadow: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 12px 24px;
+  background-color: @primary;
+  color: #fff;
+  border-radius: 0;
+  &:hover {
+  	text-decoration: none;
+  }
+}
+
 
 a.btn:hover {
 	text-decoration: none;
@@ -8,19 +21,52 @@ a.btn:hover {
 .btn.alternate {
 	background-color: @accent5;
 	color: white;
-}
-
-.btn.alternate:hover {
-	background-color: #df6807;
-	color: white;
+	&:hover {
+		background-color: #df6807;
+		color: white;
+	}
 }
 
 .btn.next {
 	background-color: #e6e6e6;
 	color: black;
+	&:hover {
+		background-color: #a6a6a6;
+		color:white;
+	}
 }
 
-.btn.next:hover {
-	background-color: #a6a6a6;
+.more-by-author{
+	font-size: 13px;
+	background-color: #484848;
+	padding: 3px 10px;
+	font-weight:bold;
 	color:white;
+	&:hover {
+		text-decoration: none;
+		background-color: #888;
+		color:white;
+	}
+}
+
+.inline-form input[type=submit],
+.inline-form button,
+.inline-form .btn {
+  font-size: 0.875em;
+  padding: 0.65rem 1.3rem;
+  background: @primary;
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: auto;
+  &:hover {
+  	background-color:#00b5e8;
+  }
+}
+button.newsletter-submit {
+	padding: 1em 1.5rem;
+}
+button.search-submit {
+	position:absolute;
 }

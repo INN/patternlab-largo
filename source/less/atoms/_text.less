@@ -1,5 +1,4 @@
 /* Headings */
-
 h1 {
 	font-size: 3.5em;
 	margin-bottom: 24px;
@@ -39,16 +38,7 @@ h6 {
 	text-align:center;
 }
 
-/* Logo */
-
-@media all and (min-width: 46.8em) {
-  .logo {
-    max-width: 19rem;
-  }
-}
-
 /* Subheading*/
-
 .subheading {
 	color: @neutral2;
 	font-family: @largo_sans;
@@ -59,7 +49,6 @@ h6 {
 }
 
 /* Heading Top Tag */
-
 h5.top-date {
 	color: @neutral4;
 	font-family: @largo_sans;
@@ -99,7 +88,6 @@ h5.byline {
 }
 
 /* Headings with Links */
-
 a {
 	color: @neutral1;
 	font-family: @largo_sans;
@@ -118,7 +106,6 @@ a:hover {
 }
 
 /* Paragraph */
-
 p {
 	color: @neutral2;
 	font-size: 1em;
@@ -155,26 +142,15 @@ p.warning {
 p.information {
 	color: @accent2;
 }
-/* Display Classes */
 
-@media all and (max-width: 46.8em) {
-  .hide-small {
-    display: none;
-  }
+p#donate {
+	font-size: 1.2em;
+	a {
+		font-weight: normal;
+		color: @primary;
+	}
 }
-@media all and (min-width: 46.8em) and (max-width: 50em) {
-  .hide-med {
-    display: none;
-  }
-}
-@media all and (min-width: 50em) {
-  .hide-large {
-    display: none;
-  }
-}
-
 /* Block Quote */
-
 .blockquote {
 	padding: 5px 15px 5px 30px;
 	margin: 24px;
@@ -194,105 +170,6 @@ p.caption {
 	margin: 5px 0 0;
 }
 
-/* Lists */
-ul li, ol li {
-	font-family:@largo_serif;
-	font-size:1em;
-	margin-bottom: 12px;
-	line-height: 1.5;
-	li {
-		margin-top: 8px;
-	}
-}
-
-dl {
-	font-family:@largo_serif;
-	font-size:1em;
-	margin-bottom: 12px;
-	line-height: 2;
-}
-
-.icons-inline-list li {
-	color:@primary;
-}
-
-.icons.inline-list li {
-	color:@primary;
-}
-
-/* Buttons */
-.btn, .newsletter-submit {
-  text-shadow: none;
-  border: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 12px 24px;
-  background-color: @primary;
-  color: #fff;
-  border-radius: 0;
-  &:hover {
-  	text-decoration: none;
-  }
-}
-
-a.btn:hover {
-	text-decoration: none;
-}
-
-.btn.alternate {
-	background-color: @accent5;
-	color: white;
-	&:hover {
-		background-color: #df6807;
-	}
-}
-
-.btn.next {
-	background-color: #e6e6e6;
-	color: black;
-	&:hover {
-		background-color: #a6a6a6;
-		color:white;
-	}
-}
-
-.more-by-author{
-	font-size: 13px;
-	background-color: #484848;
-	padding: 3px 10px;
-	font-weight:bold;
-	color:white;
-	&:hover {
-		text-decoration: none;
-		background-color: #888;
-		color:white;
-	}
-}
-
-.inline-form input[type=submit],
-.inline-form button,
-.inline-form .btn {
-  font-size: 0.875em;
-  padding: 0.65rem 1.3rem;
-  background: @primary;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  width: auto;
-  &:hover {
-  	background-color:#00b5e8;
-  }
-}
-
-/* Avatar */
-.avatar {
-	float:left;
-	margin:5px 15px 10px 0;
-	padding: 4px;
-	border: 1px solid #ddd;
-}
-
 /* Byline */
 .byline {
 	font-style: normal;
@@ -310,88 +187,6 @@ a.btn:hover {
 .author-box p{
 	font-family: @largo_sans;
 }
-
-/* Blocks */
-div.thumbnail-img {
-	float:right;
-	margin: 0 0 10px 20px;
-}
-
-@media all and (max-width: 46.8em) {
-div.thumbnail-img {
-	max-width: 50%;
-}
-}
-
-.entry-content h5 {
-	margin-bottom: 4.8px;
-}
-
-.entry-content h4 {
-	margin-bottom: .5em;
-}
-
-.headline {
-	color: @neutral1;
-	font-family: @largo_sans;
-	line-height: 1;
-	margin-bottom: 24px;
-	font-weight:bold;
-}
-
-.block-hero .b-text {
-	padding: 16rem;
-	background: rgba(255, 255, 255, 0.5);
-	> .headline {
-		color:white;
-		text-align: center;
-		text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.65);
-	}
-}
-
-/* Newsletter */
-
-.inline-container input {
-	float: left;
-	margin-right: 6px;
-	padding: 12px 10px;
-	width: 400px;
-}
-
-button.newsletter-submit {
-	padding: 14.5px 10px;
-	position: relative;
-	width: 200px;
-}
-
-fieldset {
-	> h3 {
-	font-weight:bold;
-	text-transform: uppercase;
-	margin-bottom: 12px;
-	}
-	> p {
-		font-family: @largo_sans;
-	}
-}
-
-/* Navigation */
-nav.nav {
-	float: left;
-	border-top: 1px solid #aaa;
-	border-bottom: 1px solid #aaa;
-	width: 100%;
-	li {
-		margin-bottom: 0px;
-	}
-}
-
-nav>ul>li>a:hover {
-	text-decoration: none;
-	color: @neutral1;
-	background-color: #f2f2f2
-}
-
 
 /*
 p.description {

@@ -1,7 +1,23 @@
+<h2 class="heading">Donate</h2>
+<p id="donate">INN is a <a href="#">501(c)(3) federally recognized nonprofit</a> and your tax-deductible donation helps support our work on behalf of our  <a href="#">120+ nonprofit members.</a></p>
 <ul id="donation_form">
     <li id="form-1">
         <label class="gfield_label">I would like to contribute:</label>
         <input name="input_1" type="text" value="$10.00">
+        <ul class="donate-now">
+            <li class="choice-1">
+                <input type="radio" id="per-month" name="amount"/>
+                <label for="per-month">Per Month</label>
+             </li>
+             <li class ="choice-2">
+                <input type="radio" id="per-year" name="amount"/>
+                <label for="per-year">Per Year</label>
+            </li>
+            <li class ="choice-3">
+                <input type="radio" id="one-time" name="amount"/>
+                <label for="one-time">One Time</label>
+            </li>
+        </ul>
     </li>
     <li id="form-2">
         <div class="first-name-last-name">
@@ -37,6 +53,11 @@
         <label class="gfield_label">Zip / Postal Code</label>
         <input name="input_2" type="text">
     </li>
+    <ul id="credit-card-fee">
+        <li>
+            <label for="credit-card-fee"><input id="credit-card-fee" name="checkbox" type="checkbox">I would like to pay the credit card fee associated with processing this gift! (Fee equals 2.9% of your contribution, plus 30 cents per transaction.)</label>
+        </li>
+    </ul>
     <li id="form-4">
         <label class="gfield_label">Card Number</label>
         <input name="input_3" type="text">
@@ -45,13 +66,16 @@
         <label class="gfield_label">Cardholder Name</label>
         <input name="input_3" type="text">
     </li>
-    <li id="form-9"></li>
-    <li id="form-10"></li>
-    <li id="form-11"></li>
-    <li id="form-12"></li>
+    <ul id="credit-card-fee">
+        <li>
+            <label for="credit-card-fee"><input id="credit-card-fee" name="checkbox2" type="checkbox">I would like to receive occasional updates about INN and its members.</label>
+        </li>
+    </ul>
 </ul>
 
-<!--<fieldset>
+
+<!--
+<fieldset>
     <div class="field-container">
         <label for="text">Text Input <abbr title="Required">*</abbr></label>
         <input id="text" type="text" placeholder="Text Input">
