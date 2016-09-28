@@ -2227,6 +2227,7 @@ p#donate {
 }
 p#donate a {
   font-weight: normal;
+  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
   color: #09C9FF;
 }
 /* Block Quote */
@@ -2412,10 +2413,15 @@ li#form-4 {
   margin-top: 48px;
 }
 /*Checkboxes*/
+ul#credit-card-fee {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 #credit-card-fee label {
   margin: 4px 0 0 10px;
   max-width: 95%;
   font-size: 14px;
+  font-weight: bold;
 }
 #credit-card-fee input {
   margin-right: 1em;
@@ -2483,15 +2489,24 @@ div.radio-buttons .donate-now input[type="radio"]:checked + label {
   display: none;
 }*/
 /*Select Menu*/
-select {
+.expiration-month select,
+.expiration-year select {
   font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
   font-size: 16px;
-  line-height: 1.5em;
-  width: 47%;
+  line-height: 1.5;
+  padding: 5px;
   height: 41px;
+  width: 47%;
+  display: inline-block;
+  -webkit-appearance: none;
 }
-optgroup {
-  font-size: 16px;
+span#expiration-month-and-year {
+  width: 50%;
+  float: left;
+  display: inline;
+}
+#exp-date-security-code {
+  margin-bottom: 12px;
 }
 /*input[name=two-inputs-one-line] {
   width:50%;
@@ -2501,6 +2516,9 @@ optgroup {
   display: inline-block;
   width: 50%;
   padding-right: 14px;
+}
+li#form-9 h4 {
+  margin-bottom: 8px;
 }
 div.thumbnail-img {
   float: right;
@@ -2566,4 +2584,62 @@ fieldset > h3 {
 }
 fieldset > p {
   font-family: "effra", helvetica, sans-serif;
+}
+div#footer-bg {
+  background-color: #1C1C1C;
+  height: 100%;
+  padding-bottom: 18px;
+}
+div#supplementary {
+  background-color: #1C1C1C;
+}
+#supplementary div:first-child {
+  padding: 0;
+}
+div#footer-column-1 {
+  width: 22%;
+  display: block;
+  min-height: 28px;
+  float: left;
+  margin-left: 2.12765957%;
+  background-color: #1C1C1C;
+}
+div#footer-column-1 li {
+  font-size: 14.4px;
+}
+div#footer-column-1 li a {
+  font-weight: normal;
+}
+h5.footer-title {
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  padding-bottom: 4.8px;
+}
+div.footer-bottom.clearfix {
+  padding-top: 24px;
+}
+p.footer-credit {
+  margin-bottom: 0px;
+}
+p.footer-credit {
+  text-align: center;
+}
+ul#menu-footer-bottom li {
+  display: inline;
+  padding-right: 10px;
+}
+/* Mobile */
+@media screen and (max-width: 768px) {
+  #site-footer div {
+    width: 100%;
+    float: none;
+    margin: 0 0 24px;
+    clear: both;
+  }
+  #site-footer div li {
+    font-size: 19px;
+    margin-bottom: 8px;
+  }
 }
