@@ -2551,20 +2551,88 @@ div.thumbnail-img {
   text-align: center;
   text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.65);
 }
+#hero {
+  margin-bottom: 2em;
+  padding: 300px 0;
+}
+#hero h2 {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-size: 4em;
+  font-weight: bold;
+  text-shadow: 0px 1px 8px rgba(0, 0, 0, 0.65);
+}
+@media screen and (max-width: 768px) {
+  #hero {
+    display: none;
+  }
+}
 /* Navigation */
 nav.nav {
   float: left;
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
   width: 100%;
+  background-color: white;
+}
+nav.nav > ul {
+  margin-left: 90px;
 }
 nav.nav li {
   margin-bottom: 0px;
+}
+nav.nav li a {
+  font-weight: normal;
 }
 nav > ul > li > a:hover {
   text-decoration: none;
   color: #1C1C1C;
   background-color: #f2f2f2;
+}
+/* Dropdown */
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-menu-container {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 185px;
+  min-width: 160px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+.dropdown-menu-container li {
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding-top: 0;
+  margin-top: 0;
+}
+.dropdown-menu-container li > a {
+  padding: 5px 15px;
+  width: auto;
+  display: block;
+  white-space: nowrap;
+}
+.dropdown-menu-container li > a:hover {
+  color: #1C1C1C;
+  text-decoration: none;
+  background-color: #f2f2f2;
+}
+.dropdown:hover .dropdown-menu-container {
+  display: block;
+}
+.caret {
+  display: inline-block;
+  width: 0;
+  top: 2px;
+  margin-left: 10px;
+  border-top: 6px solid #484848;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid transparent;
 }
 .inline-container input {
   float: left;
@@ -2590,9 +2658,6 @@ div#footer-bg {
   height: 100%;
   padding-bottom: 18px;
 }
-div#supplementary {
-  background-color: #1C1C1C;
-}
 #supplementary div:first-child {
   padding: 0;
 }
@@ -2602,7 +2667,6 @@ div#footer-column-1 {
   min-height: 28px;
   float: left;
   margin-left: 2.12765957%;
-  background-color: #1C1C1C;
 }
 div#footer-column-1 li {
   font-size: 14.4px;
@@ -2642,4 +2706,23 @@ ul#menu-footer-bottom li {
     font-size: 19px;
     margin-bottom: 8px;
   }
+}
+#site-header {
+  margin: 24px 0;
+  width: auto;
+}
+#site-header img {
+  margin: 5px 0;
+  margin-left: 100px;
+}
+#site-header .widget {
+  margin-bottom: 0;
+}
+#site-header aside {
+  max-width: 320px;
+  float: right;
+}
+#site-header a.btn.alternate {
+  margin-top: 12px;
+  margin-right: 100px;
 }
