@@ -2289,6 +2289,7 @@ p.description {
 .btn:hover,
 .newsletter-submit:hover {
   text-decoration: none;
+  background-color: #00b5e8;
 }
 a.btn:hover {
   text-decoration: none;
@@ -2652,6 +2653,7 @@ fieldset > h3 {
 }
 fieldset > p {
   font-family: "effra", helvetica, sans-serif;
+  color: white;
 }
 div#footer-bg {
   background-color: #1C1C1C;
@@ -2707,6 +2709,62 @@ ul#menu-footer-bottom li {
     margin-bottom: 8px;
   }
 }
+.calendar-event {
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px dotted #2f2f2f;
+}
+.list-date {
+  float: left;
+  overflow: hidden;
+  font-weight: bold;
+  margin: 10px 5% 10px 0;
+  padding: 3px;
+  width: 15%;
+  text-align: center;
+  display: inline;
+  background: #666;
+  -webkit-box-sizing: border-box;
+}
+.list-dayname {
+  background: #fff;
+  color: #666;
+  padding: 3px;
+  font-size: 9px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  display: block;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.list-daynumber {
+  color: #fff;
+  font-size: 15px;
+  width: 100%;
+  line-height: 22px;
+  display: block;
+  text-align: center;
+}
+.list-info {
+  font-size: 13px;
+  margin: 10px 0;
+  display: inline;
+  line-height: 1;
+  float: left;
+  width: 80%;
+}
+.list-info h2,
+.list-info a {
+  color: #09C9FF;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
 #site-header {
   margin: 24px 0;
   width: auto;
@@ -2725,4 +2783,56 @@ ul#menu-footer-bottom li {
 #site-header a.btn.alternate {
   margin-top: 12px;
   margin-right: 100px;
+}
+.headline-list h4 {
+  font-size: 1.25em;
+}
+.headline-list h4 a {
+  color: #777777;
+  font-weight: normal;
+}
+.headline-list h4 a:hover {
+  color: #09C9FF;
+}
+.headline-list li {
+  padding: 0 0;
+  border-top: 0;
+}
+h3.section-title {
+  margin-bottom: 24px;
+  font-weight: bold;
+  color: #1C1C1C;
+  font-size: 1.833em;
+}
+.morelink a {
+  color: #09C9FF;
+  font-weight: normal;
+}
+#quick-links li {
+  font-size: 1.25em;
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px 0 0;
+}
+#quick-links a {
+  font-weight: normal;
+  color: #09C9FF;
+}
+#quick-links h4 {
+  font-size: 1.833em;
+  font-weight: bold;
+}
+#upcoming-events {
+  font-family: "effra", helvetica, sans-serif;
+}
+div#homepage-top-left {
+  width: 48.93617021%;
+  display: block;
+  float: left;
+}
+div#homepage-top-right {
+  width: 48.93617021%;
+  display: block;
+  float: right;
+  margin-left: 2.12765957%;
 }
