@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="44px" viewBox="0 0 50 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>heart</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="INN-Homepage" sketch:type="MSArtboardGroup" transform="translate(-697.000000, -2175.000000)" fill="#AAAAAA">
+            <path d="M722,2219 L721.133196,2218.28845 C702.143237,2202.69687 697,2197.2084 697,2188.29319 C697,2180.96333 702.915535,2175 710.186651,2175 C716.263142,2175 719.697874,2178.47886 722,2181.09432 C724.302126,2178.47886 727.736858,2175 733.813349,2175 C741.084465,2175 747,2180.96333 747,2188.29319 C747,2197.2084 741.856763,2202.69687 722.866804,2218.28845 L722,2219 L722,2219 Z M710.186651,2177.76879 C704.430597,2177.76879 699.746604,2182.48914 699.746604,2188.29319 C699.746604,2195.93119 704.514767,2201.03708 722,2215.42736 C739.485233,2201.03708 744.253396,2195.93119 744.253396,2188.29319 C744.253396,2182.48914 739.569403,2177.76879 733.813349,2177.76879 C728.541642,2177.76879 725.790608,2180.93207 723.581512,2183.47459 L722,2185.26538 L720.418488,2183.47459 C718.209392,2180.93207 715.458358,2177.76879 710.186651,2177.76879 L710.186651,2177.76879 Z" id="heart" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

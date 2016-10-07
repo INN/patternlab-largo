@@ -2825,6 +2825,55 @@ h3.section-title {
 #upcoming-events {
   font-family: "effra", helvetica, sans-serif;
 }
+.span4 {
+  text-align: center;
+  padding: 2em 5em;
+  width: 31.91489361%;
+  display: block;
+  min-height: 28px;
+  float: left;
+}
+.row-fluid {
+  width: 100%;
+  display: block;
+}
+.row-fluid h5 {
+  margin-bottom: .25em;
+}
+.row-fluid img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: .8em;
+}
+.row-fluid p {
+  line-height: 1.5;
+  margin: 0 0 24px;
+  display: block;
+  font-family: "effra", helvetica, sans-serif;
+  text-align: center;
+}
+.row-fluid a {
+  font-size: 20px;
+  margin-bottom: 0.25em;
+  color: #777777;
+  line-height: 1.3;
+  font-weight: normal;
+}
+.row-fluid p:first-child {
+  margin-bottom: 0;
+}
+#hire-us {
+  text-align: center;
+}
+#hire-us a,
+#hire-us p {
+  color: white;
+  text-align: center;
+  font-family: "effra", helvetica, sans-serif;
+}
+#hire-us a.btn {
+  font-size: 1em;
+}
 div#homepage-top-left {
   width: 48.93617021%;
   display: block;
