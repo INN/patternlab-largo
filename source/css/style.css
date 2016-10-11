@@ -2453,7 +2453,7 @@ ul.donate-now {
   color: white;
   display: inline-block;
 }
-div.radio-buttons .donate-now input[type="radio"]:checked + label {
+.donate-now input[type="radio"]:checked + label {
   background-color: #F77710;
 }
 /*.donate-now li {
@@ -2828,7 +2828,7 @@ h3.section-title {
 .span4 {
   text-align: center;
   padding: 2em 5em;
-  width: 31.91489361%;
+  width: 33.33333%;
   display: block;
   min-height: 28px;
   float: left;
@@ -2836,6 +2836,7 @@ h3.section-title {
 .row-fluid {
   width: 100%;
   display: block;
+  float: left;
 }
 .row-fluid h5 {
   margin-bottom: .25em;
@@ -2864,6 +2865,7 @@ h3.section-title {
 }
 #hire-us {
   text-align: center;
+  padding: 3em;
 }
 #hire-us a,
 #hire-us p {
