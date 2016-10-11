@@ -2876,6 +2876,32 @@ h3.section-title {
 #hire-us a.btn {
   font-size: 1em;
 }
+.inn-members-widget li {
+  display: inline;
+  float: left;
+  padding: 5px;
+  margin: 0;
+}
+.inn-members-widget li a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+.inn-members-widget li a:hover {
+  transform: scale(1.2, 1.2);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+.inn-members-widget img {
+  width: 50px;
+  height: 50px;
+  clear: both;
+}
+.inn-members-widget.avatar {
+  margin: 0;
+  padding: 0;
+}
 div#homepage-top-left {
   width: 48.93617021%;
   display: block;
