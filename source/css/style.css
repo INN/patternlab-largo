@@ -2902,6 +2902,25 @@ h3.section-title {
   margin: 0;
   padding: 0;
 }
+#testimonial img {
+  width: 140px;
+  height: 140px;
+  border-radius: 100px;
+  margin: 0 5em 0 0;
+}
+#testimonial p {
+  padding: 0 4em;
+  font-size: 21px;
+  color: white;
+}
+#testimonial p.credit {
+  text-align: right;
+  font-family: "effra", helvetica, sans-serif;
+  font-size: 18px;
+}
+#testimonial p.credit a {
+  color: #09C9FF;
+}
 div#homepage-top-left {
   width: 48.93617021%;
   display: block;
