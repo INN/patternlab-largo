@@ -2660,6 +2660,10 @@ div#footer-bg {
   height: 100%;
   padding-bottom: 18px;
 }
+#site-footer {
+  max-width: 1170px;
+  margin: 0 auto;
+}
 #supplementary div:first-child {
   padding: 0;
 }
@@ -2784,21 +2788,26 @@ ul#menu-footer-bottom li {
   margin-top: 12px;
   margin-right: 100px;
 }
-.headline-list h4 {
+div#homepage-top-left {
+  width: 48.93617021%;
+  display: block;
+  float: left;
+}
+.headline-list h5 {
   font-size: 1.25em;
 }
-.headline-list h4 a {
+.headline-list h5 a {
   color: #777777;
   font-weight: normal;
 }
-.headline-list h4 a:hover {
+.headline-list h5 a:hover {
   color: #09C9FF;
 }
 .headline-list li {
   padding: 0 0;
   border-top: 0;
 }
-h3.section-title {
+h4.section-title {
   margin-bottom: 24px;
   font-weight: bold;
   color: #1C1C1C;
@@ -2821,9 +2830,23 @@ h3.section-title {
 #quick-links h4 {
   font-size: 1.833em;
   font-weight: bold;
+  color: #1C1C1C;
+}
+#quick-links ul {
+  margin-bottom: 24px;
+}
+div#quick-links {
+  margin-bottom: 48px;
+  display: block;
 }
 #upcoming-events {
   font-family: "effra", helvetica, sans-serif;
+}
+div#homepage-top-right {
+  width: 48.93617021%;
+  display: block;
+  float: left;
+  margin-left: 2.12765957%;
 }
 .span4 {
   text-align: center;
@@ -2862,6 +2885,9 @@ h3.section-title {
 }
 .row-fluid p:first-child {
   margin-bottom: 0;
+}
+#about .content {
+  display: inline-block;
 }
 #hire-us {
   text-align: center;
@@ -2921,14 +2947,32 @@ h3.section-title {
 #testimonial p.credit a {
   color: #09C9FF;
 }
-div#homepage-top-left {
-  width: 48.93617021%;
-  display: block;
-  float: left;
+#supporters {
+  background-color: #EDF1F4;
+  padding-top: 2em;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
-div#homepage-top-right {
-  width: 48.93617021%;
-  display: block;
-  float: right;
-  margin-left: 2.12765957%;
+#supporters .span4 {
+  padding: 2em 2em 1em;
+  text-align: center;
+}
+#supporters h3 {
+  color: #1C1C1C;
+  font-weight: bold;
+  background-color: transparent;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+#supporters li {
+  text-align: left;
+}
+#supporters a,
+#supporters p {
+  font-size: 1em;
+}
+#supporters div {
+  background-color: #EDF1F4;
 }

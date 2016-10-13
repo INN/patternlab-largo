@@ -1,45 +1,8 @@
 <div class="page" id="page">
 	{{> organisms-header }}
-	<div role="main">
-		{{# emergency }}
-			{{> molecules-alert }}
-		{{/ emergency }}
-		{{# hero }}
-			{{> molecules-block-hero }}
-		{{/ hero}}
-		<!--<div class="g g-3up">
-			{{# touts}}
-				<div class="gi">
-					{{> molecules-inset-block }}
-				</div>
-			{{/ touts}}
-		</div>-->
-		<div id="quick-links" class="row-fluid">
-			{{> organisms-quick-links }}
-		</div>
-		<div id="homepage-top-left" class="span6">
-			{{> organisms-related-posts }}
-		</div>
-		<div id="homepage-top-right" class="span6">
-			{{> organisms-upcoming-events }}
-		</div>
-		<div class="l-two-col">
-			<div class="l-main">
-				<section class="section latest-posts">
-					<h2 class="section-title">Latest Posts</h2>
-					<ul class="post-list">
-						{{# latest-posts }}
-							<li>{{> molecules-media-block }}</li>
-						{{/ latest-posts }}
-					</ul>
-					<a href="#" class="text-btn">View more posts</a>
-				</section>
-			</div><!--end .l-main-->
-
-			<div class="l-sidebar">
-				{{> organisms-recent-tweets }}
-			</div><!--end .l-sidebar-->
-		</div><!--end .l-two-col-->
-	</div><!--End role=main-->
-	{{> organisms-footer }}
+	{{> molecules-block-hero }}
+	{{> organisms-homepage-links }}
+	{{> organisms-about-inn }}
+	<!--{{> molecules-newsletter }}-->
 </div>
+{{> organisms-footer }}
