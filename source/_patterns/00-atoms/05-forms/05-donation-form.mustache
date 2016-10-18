@@ -1,172 +1,134 @@
-<h2 class="heading">Donate</h2>
-<p id="donate">INN is a <a href="#">501(c)(3) federally recognized nonprofit</a> and your tax-deductible donation helps support our work on behalf of our  <a href="#">120+ nonprofit members.</a></p>
-<ul id="donation_form">
-    <li id="form-1">
-        <label class="gfield_label">I would like to contribute:</label>
-        <input name="input_1" type="text" value="$10.00">
-        <ul class="donate-now">
-            <li class="choice-1">
-                <input type="radio" id="per-month-2" name="amount-2"/>
-                <label for="per-month-2">Per Month</label>
-             </li>
-             <li class ="choice-2">
-                <input type="radio" id="per-year-2" name="amount-2"/>
-                <label for="per-year-2">Per Year</label>
-            </li>
-            <li class ="choice-3">
-                <input type="radio" id="one-time-2" name="amount-2"/>
-                <label for="one-time-2">One Time</label>
+<div id="main">
+    <h2 class="heading">Donate</h2>
+    <p id="donate">INN is a <a href="#">501(c)(3) federally recognized nonprofit</a> and your tax-deductible donation helps support our work on behalf of our  <a href="#">120+ nonprofit members.</a></p>
+    <ul id="donation_form">
+        <li id="form-1">
+            <label class="gfield_label">I would like to contribute:</label>
+            <input name="input_1" type="text" value="$10.00">
+            <ul class="donate-now">
+                <li class="choice-1">
+                    <input type="radio" id="per-month-2" name="amount-2"/>
+                    <label for="per-month-2">Per Month</label>
+                 </li>
+                 <li class ="choice-2">
+                    <input type="radio" id="per-year-2" name="amount-2"/>
+                    <label for="per-year-2">Per Year</label>
+                </li>
+                <li class ="choice-3">
+                    <input type="radio" id="one-time-2" name="amount-2"/>
+                    <label for="one-time-2">One Time</label>
+                </li>
+            </ul>
+        </li>
+        <li id="form-2">
+            <div class="first-name-last-name">
+                <span class="first-name">
+                    <label class="gfield_label">First Name</label>
+                    <input name="two-inputs-one-line" type="text">
+                </span><span class="last-name">
+                    <label class="gfield_label">Last Name</label>
+                    <input name="two-inputs-one-line" type="text">
+                </span>
+            </div>
+        </li>
+        <li id="form-3">
+            <label class="gfield_label">Email</label>
+            <input name="input_2" type="text">
+        </li>
+        <li id="form-4">
+             <label class="gfield_label">Street Address</label>
+            <input name="input_3" type="text">
+        </li>
+        <li id="form-5">
+                <div class="first-name-last-name">
+                <span class="first-name">
+                    <label class="gfield_label">City</label>
+                    <input name="two-inputs-one-line" type="text">
+                </span><span class="last-name">
+                    <label class="gfield_label">State / Province / Region</label>
+                    <input name="two-inputs-one-line" type="text">
+                </span>
+            </div>
+        </li>
+        <li id="form-6">
+            <label class="gfield_label">Zip / Postal Code</label>
+            <input name="input_2" type="text">
+        </li>
+        <ul id="credit-card-fee">
+            <li>
+                <label for="credit-card-fee"><input id="credit-card-fee" name="checkbox" type="checkbox">I would like to pay the credit card fee associated with processing this gift! (Fee equals 2.9% of your contribution, plus 30 cents per transaction.)</label>
             </li>
         </ul>
-    </li>
-    <li id="form-2">
-        <div class="first-name-last-name">
-            <span class="first-name">
-                <label class="gfield_label">First Name</label>
-                <input name="two-inputs-one-line" type="text">
-            </span><span class="last-name">
-                <label class="gfield_label">Last Name</label>
-                <input name="two-inputs-one-line" type="text">
-            </span>
-        </div>
-    </li>
-    <li id="form-3">
-        <label class="gfield_label">Email</label>
-        <input name="input_2" type="text">
-    </li>
-    <li id="form-4">
-         <label class="gfield_label">Street Address</label>
-        <input name="input_3" type="text">
-    </li>
-    <li id="form-5">
-            <div class="first-name-last-name">
-            <span class="first-name">
-                <label class="gfield_label">City</label>
-                <input name="two-inputs-one-line" type="text">
-            </span><span class="last-name">
-                <label class="gfield_label">State / Province / Region</label>
-                <input name="two-inputs-one-line" type="text">
-            </span>
-        </div>
-    </li>
-    <li id="form-6">
-        <label class="gfield_label">Zip / Postal Code</label>
-        <input name="input_2" type="text">
-    </li>
-    <ul id="credit-card-fee">
-        <li>
-            <label for="credit-card-fee"><input id="credit-card-fee" name="checkbox" type="checkbox">I would like to pay the credit card fee associated with processing this gift! (Fee equals 2.9% of your contribution, plus 30 cents per transaction.)</label>
+        <li id="form-9">
+            <h4>Credit Card Processing Fee</h4>
+            <p>$0.59</p>
         </li>
-    </ul>
-    <li id="form-9">
-        <h4>Credit Card Processing Fee</h4>
-        <p>$0.59</p>
-    </li>
-    <li id="form-9">
-        <h4>Your Contribution</h4>
-        <p>Your credit card will be charged the following amount when you hit "submit" on this form and again each month until you cancel your subscription.</p>
-    </li>
-    <li id="form-4">
-        <label class="gfield_label">Card Number</label>
-        <input name="input_3" type="text">
-    </li>
-    <li id="form-5">
-        <span id="expiration-month-and-year">
-            <span class="expiration-month">
-                <label for="select" class="gfield_label">Expiration Date</label>
-                <select id="select">
-                        <option>Month</option>
-                        <option>01</option>
-                        <option>02</option>
-                        <option>03</option>
-                        <option>04</option>
-                        <option>05</option>
-                        <option>06</option>
-                        <option>07</option>
-                        <option>08</option>
-                        <option>09</option>
-                        <option>10</option>
-                        <option>11</option>
-                        <option>12</option>
-                </select>
-                <select id="select">
-                        <option>Year</option>
-                        <option>2016</option>
-                        <option>2017</option>
-                        <option>2018</option>
-                        <option>2019</option>
-                        <option>2020</option>
-                        <option>2021</option>
-                        <option>2022</option>
-                        <option>2023</option>
-                        <option>2024</option>
-                        <option>2025</option>
-                        <option>2026</option>
-                        <option>2027</option>
-                        <option>2028</option>
-                        <option>2029</option>
-                        <option>2030</option>
-                        <option>2031</option>
-                        <option>2032</option>
-                        <option>2033</option>
-                        <option>2034</option>
-                        <option>2035</option>
-                </select>
-            </span>
-        </span>
-        <span class="last-name">
-            <label class="gfield_label">Security Code</label>
-            <input name="two-inputs-one-line" type="text">
-        </span>
-    </li>
-    <li id="form-8">
-        <label class="gfield_label">Cardholder Name</label>
-        <input name="input_3" type="text">
-    </li>
-    <ul id="credit-card-fee">
-        <li>
-            <label for="credit-card-fee"><input id="credit-card-fee" name="checkbox2" type="checkbox">I would like to receive occasional updates about INN and its members.</label>
+        <li id="form-9">
+            <h4>Your Contribution</h4>
+            <p>Your credit card will be charged the following amount when you hit "submit" on this form and again each month until you cancel your subscription.</p>
         </li>
+        <li id="form-4">
+            <label class="gfield_label">Card Number</label>
+            <input name="input_3" type="text">
+        </li>
+        <li id="form-5">
+            <span id="expiration-month-and-year">
+                <span class="expiration-month">
+                    <label for="select" class="gfield_label">Expiration Date</label>
+                    <select id="select">
+                            <option>Month</option>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                    </select>
+                    <select id="select">
+                            <option>Year</option>
+                            <option>2016</option>
+                            <option>2017</option>
+                            <option>2018</option>
+                            <option>2019</option>
+                            <option>2020</option>
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                            <option>2027</option>
+                            <option>2028</option>
+                            <option>2029</option>
+                            <option>2030</option>
+                            <option>2031</option>
+                            <option>2032</option>
+                            <option>2033</option>
+                            <option>2034</option>
+                            <option>2035</option>
+                    </select>
+                </span>
+            </span>
+            <span class="last-name">
+                <label class="gfield_label">Security Code</label>
+                <input name="two-inputs-one-line" type="text">
+            </span>
+        </li>
+        <li id="form-8">
+            <label class="gfield_label">Cardholder Name</label>
+            <input name="input_3" type="text">
+        </li>
+        <ul id="credit-card-fee">
+            <li>
+                <label for="credit-card-fee"><input id="credit-card-fee" name="checkbox2" type="checkbox">I would like to receive occasional updates about INN and its members.</label>
+            </li>
+        </ul>
     </ul>
-</ul>
-<p><a href="#" class="btn alternate">Submit</a></p>
-
-<!--
-<fieldset>
-    <div class="field-container">
-        <label for="text">Text Input <abbr title="Required">*</abbr></label>
-        <input id="text" type="text" placeholder="Text Input">
-    </div>
-    <div class="field-container">
-        <label for="password">Password</label>
-        <input id="password" type="password" placeholder="Type your Password">
-    </div>
-    <div class="field-container">
-        <label for="webaddress">Web Address</label>
-        <input id="webaddress" type="url" placeholder="http://yoursite.com">
-    </div>
-    <div class="field-container">
-        <label for="emailaddress">Email Address</label>
-        <input id="emailaddress" type="email" placeholder="name@email.com">
-    </div>
-    <div class="field-container">
-        <label for="search">Search</label>
-        <input id="search" type="search" placeholder="Enter Search Term">
-    </div>
-    <div class="field-container">
-        <label for="text">Number Input <abbr title="Required">*</abbr></label>
-        <input id="text" type="number" placeholder="Enter a Number" pattern="[0-9]*">
-    </div>
-    <div class="field-container">
-        <label for="textarea">Textarea</label>
-        <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
-    </div>
-    <div class="field-container">
-        <label class="error">Error Input</label>
-        <input class="is-error" type="text" placeholder="Text Input">
-    </div>
-    <div class="field-container">
-        <label  class="valid">Valid</label>
-        <input  class="is-valid" type="text" placeholder="Text Input">
-    </div>
-</fieldset>
+    <p><a href="#" class="btn alternate">Submit</a></p>
+</div>
