@@ -2542,8 +2542,9 @@ div.thumbnail-img {
 .entry-content h5 {
   margin-bottom: 4.8px;
 }
-.entry-content h4 {
+.entry-content h2 {
   margin-bottom: .5em;
+  font-size: 24px;
 }
 .headline {
   color: #1C1C1C;
@@ -2656,6 +2657,7 @@ li.dropdown {
 }
 div.internal-subnav {
   width: 25%;
+  float: left;
 }
 .inline-container input {
   float: left;
@@ -3009,4 +3011,25 @@ section#about {
   background-color: #EDF1F4;
   max-width: 1170px;
   margin: 0 auto;
+}
+.stories article {
+  border-bottom: 1px dotted #aaa;
+  margin-bottom: 24px;
+  display: block;
+}
+.entry-content h2 a:hover {
+  color: #09C9FF;
+}
+.entry-content .top-tag a {
+  font-weight: normal;
+}
+#content.stories {
+  margin-left: 0;
+  padding-left: 80px;
+  width: 75%;
+  float: left;
+}
+#content.stories h1 {
+  font-size: 44px;
+  font-weight: bold;
 }
