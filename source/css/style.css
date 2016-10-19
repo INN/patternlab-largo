@@ -2246,6 +2246,39 @@ p#donate a {
   font-style: normal;
   margin: 12px 0;
 }
+/* Pull Quote */
+.type-pull-quote {
+  border-left: 1px solid #aaaaaa;
+  padding-left: 40px;
+  color: #555555;
+  float: right;
+  margin: 6px 0 12px 20px;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 1.3;
+}
+.type-pull-quote:before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: 20px auto;
+  background: #ddd;
+}
+.type-pull-quote a {
+  color: #09C9FF;
+}
+.type-pull-quote p {
+  font-family: "effra", helvetica, sans-serif;
+}
+.type-pull-quote:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: 20px auto;
+  background: #ddd;
+}
 /* Caption */
 p.caption {
   color: neutral4;
