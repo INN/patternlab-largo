@@ -2754,9 +2754,8 @@ div.footer-bottom.clearfix {
 }
 p.footer-credit {
   margin-bottom: 0px;
-}
-p.footer-credit {
   text-align: center;
+  font-size: 1em;
 }
 ul#menu-footer-bottom li {
   display: inline;
@@ -2830,6 +2829,22 @@ ul#menu-footer-bottom li {
   line-height: 18px;
   margin-top: 0;
   margin-bottom: 10px;
+}
+div.figure-with-caption {
+  background-color: #efefef;
+  text-align: center;
+  width: 100%;
+  margin: 0 0 24px;
+  display: inline-block;
+}
+p.wp-caption-text {
+  text-align: left;
+  margin: 0 17.0213% 12px;
+  padding-top: 4px;
+  font-size: 1em;
+  font-style: normal;
+  font-family: "effra", helvetica, sans-serif;
+  color: #777777;
 }
 #site-header {
   margin: 24px 0;
