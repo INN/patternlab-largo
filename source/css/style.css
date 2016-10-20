@@ -3133,3 +3133,8 @@ header .top-tag {
   position: absolute;
   left: 0;
 }
+article #whole-article {
+  padding: 0 17.021276594%;
+  margin-bottom: 24px;
+  display: block;
+}
