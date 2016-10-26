@@ -1,0 +1,54 @@
+.previous {
+	width: 48%;
+	float: left;
+	text-align: left;
+	display: block;
+	img {
+		float: left;
+		padding-right: 20px;
+		max-width: 100%;
+		height: auto;
+		clear: both;
+	}
+}
+
+.next {
+	width: 48%;
+	float: right;
+	text-align: right;
+	display: block;
+	img {
+		float: right;
+		padding-left: 20px;
+		max-width: 100%;
+		height: auto;
+		clear: both;
+	}
+}
+
+.previous, .next {
+	a {
+		font-weight: normal;
+		&:hover {
+			text-decoration: none;
+			color: white;
+		}
+	}
+
+	h5 {
+		margin-bottom: .2em;
+		font-size: 20px;
+		line-height: 1.3;
+		font-weight: bold;
+	}
+}
+
+.pager a {
+	display: inline-block;
+	padding: 10px 15px;
+	color: @neutral1;
+	background-color: @neutral5;
+	&:hover {
+		background-color: @neutral2;
+	}
+}
