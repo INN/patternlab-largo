@@ -2323,7 +2323,7 @@ h3.widget-title {
   color: #09C9FF;
 }
 aside#largo-author-widget-2 {
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 /*
 p.description {
@@ -2865,7 +2865,7 @@ p.wp-caption-text {
 }
 aside#newsletter-signup-bottom {
   margin-top: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   text-align: center;
 }
 aside#newsletter-signup-bottom h3 {
@@ -3191,7 +3191,7 @@ article #whole-article {
   display: block;
 }
 aside#largo-related-posts-widget-2 {
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 aside#largo-related-posts-widget-2 h3 {
   font-size: 1.75em;
