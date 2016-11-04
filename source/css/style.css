@@ -2203,6 +2203,10 @@ p {
 article p {
   font-size: 19.55px;
 }
+article.latest-post p {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
 article#about-inn .entry-content a {
   font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
   font-weight: normal;
@@ -2598,12 +2602,12 @@ div.thumbnail-img {
     max-width: 50%;
   }
 }
-.entry-content h5 {
-  margin-bottom: 4.8px;
-}
 .entry-content h2 {
   margin-bottom: .5em;
   font-size: 24px;
+}
+.entry-content h5 {
+  margin-bottom: 4.8px;
 }
 .headline {
   color: #1C1C1C;
@@ -2637,6 +2641,10 @@ div.thumbnail-img {
   #hero {
     display: none;
   }
+}
+article.latest-post {
+  border-bottom: 1px dotted #aaa;
+  margin-bottom: 24px;
 }
 /* Navigation */
 nav.nav {
