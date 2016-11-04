@@ -3086,6 +3086,11 @@ ul.staff-roster {
   list-style-type: none;
   width: 100%;
 }
+ul.staff-roster .staff-name {
+  font-size: 1.25em;
+  margin-bottom: .25em;
+  font-weight: normal;
+}
 ul.staff-roster p {
   margin: .4em 0;
   font-size: .9em;
