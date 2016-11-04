@@ -3079,6 +3079,38 @@ section.interstitial {
 section#about {
   margin-bottom: 3em;
 }
+ul.staff-roster {
+  float: left;
+  clear: both;
+  margin: 20px 0 0;
+  list-style-type: none;
+  width: 100%;
+}
+ul.staff-roster p {
+  margin: .4em 0;
+  font-size: .9em;
+  line-height: 1.1em;
+  color: #7d8185;
+}
+ul.staff-roster a {
+  color: #09C9FF;
+}
+ul.staff-roster p + p {
+  margin-top: .75em;
+}
+ul.staff-roster li {
+  display: block;
+  float: left;
+  clear: both;
+  margin: 0 0 24px;
+  width: 100%;
+}
+aside#largo_staff_widget-2 h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
 #testimonial img {
   width: 140px;
   height: 140px;
@@ -3291,4 +3323,12 @@ aside#largo-related-posts-widget-2 li {
 }
 div.article-bottom {
   margin: 0 17.021276594%;
+}
+div.span8 {
+  width: 65%;
+  margin-left: 0;
+  display: block;
+  min-height: 28px;
+  box-sizing: border-box;
+  float: left;
 }
