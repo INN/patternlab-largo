@@ -1,11 +1,14 @@
-<div class="page clearfix" id="page">
+<div id="header" class="clearfix">
 	{{> organisms-header }}
-	<div id="main" class="clearfix">
-		<div class="l-two-col">
+</div>
+<div class="page" id="main">
+	<div role="main">
+		<div class="l-two-col clearfix">
 			<div id="content" class="span8">
 				{{> organisms-latest-posts }}
 			</div>
 			<aside id="sidebar">
+				{{> organisms-about-nerds }}
 				{{> organisms-our-team }}
 			</aside>
 		</div>
