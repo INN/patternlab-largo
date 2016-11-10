@@ -3111,6 +3111,9 @@ ul.staff-roster li {
   margin: 0 0 24px;
   width: 100%;
 }
+aside#largo_staff_widget-2 {
+  margin-bottom: 24px;
+}
 aside#largo_staff_widget-2 h3 {
   font-size: 20px;
   text-transform: uppercase;
@@ -3344,6 +3347,28 @@ aside#largo-about-widget-2 p {
 aside#largo-about-widget-2 p a {
   font-weight: normal;
   color: #09C9FF;
+}
+aside#text-4 {
+  margin-bottom: 24px;
+}
+aside#text-4 h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #1C1C1C;
+}
+#friends-widget p {
+  font-family: "effra", helvetica, sans-serif;
+  font-size: 15px;
+}
+#friends-widget a {
+  color: #09C9FF;
+  font-weight: normal;
+}
+#friends-widget ul strong a {
+  color: #909799;
+  font-weight: bold;
 }
 div.article-bottom {
   margin: 0 17.021276594%;
