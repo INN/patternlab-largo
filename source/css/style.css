@@ -2726,6 +2726,21 @@ div.internal-subnav {
   width: 25%;
   float: left;
 }
+div#topics-bar ul li {
+  display: inline;
+  margin-right: 10px;
+  white-space: nowrap;
+  font-size: 14px;
+}
+div#topics-bar ul li.menu-label {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "effra", helvetica, sans-serif;
+}
+div#topics-bar ul a {
+  font-weight: normal;
+  color: #09C9FF;
+}
 .inline-container input {
   float: left;
   margin-right: 6px;
