@@ -174,6 +174,12 @@ dd {
   display: table;
   clear: both;
 }
+/* Responsive */
+.hidden-desktop,
+.visible-phone,
+.visible-tablet {
+  display: none;
+}
 /*------------------------------------*\
     $GLOBAL HELPER CLASSES
 \*------------------------------------*/
@@ -725,7 +731,6 @@ td {
 }
 .nav a {
   display: block;
-  padding: 1rem;
   border-top: 1px solid #eeeeee;
 }
 .nav.active {
@@ -2657,8 +2662,16 @@ nav#main-nav {
 nav#main-nav li {
   margin-bottom: 0px;
 }
-nav#main-nav li a {
+nav#main-nav li > a {
   font-weight: normal;
+  line-height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+nav#main-nav li > a:hover {
+  text-decoration: none;
+  color: #1C1C1C;
+  background-color: #f2f2f2;
 }
 nav > ul > li > a:hover {
   text-decoration: none;
@@ -2690,7 +2703,6 @@ li.dropdown {
   margin-top: 0;
 }
 .dropdown-menu-container li > a {
-  padding: 5px 15px;
   width: auto;
   line-height: 1.5;
   display: block;
@@ -2745,6 +2757,24 @@ div#topics-bar ul li.menu-label {
 div#topics-bar ul a {
   font-weight: normal;
   color: #09C9FF;
+}
+/* Responsive Media Queries */
+@media (max-width: 1050px) {
+  .navbar,
+  .container {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  #main-nav,
+  #site-header {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .sticky-nav-holder {
+    display: none;
+  }
 }
 .inline-container input {
   float: left;

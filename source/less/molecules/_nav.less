@@ -7,8 +7,16 @@ nav#main-nav {
 	background-color:white;
 	li {
 		margin-bottom: 0px;
-		a {
+		> a {
 			font-weight: normal;
+			line-height: 40px;
+			padding-left: 10px;
+			padding-right: 10px;
+			&:hover {
+				text-decoration: none;
+				color: @neutral1;
+				background-color: #f2f2f2
+			}
 		}
 	}
 }
@@ -44,7 +52,6 @@ li.dropdown {
 		padding-top: 0;
 		margin-top: 0;
 		> a {
-			padding: 5px 15px;
 			width: auto;
 			line-height: 1.5;
 			display: block;
@@ -116,5 +123,26 @@ div#topics-bar {
 			font-weight: normal;
 			color: @primary;
 		}
+	}
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1050px)  {
+	.navbar, .container {
+		padding: 0 10px;
+	}
+}
+
+
+@media (max-width: 768px) {
+	#main-nav, #site-header {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.sticky-nav-holder {
+		display: none;
 	}
 }
