@@ -1,13 +1,10 @@
 /* Navigation */
-nav.nav {
+nav#main-nav {
 	float: left;
 	border-top: 1px solid #aaa;
 	border-bottom: 1px solid #aaa;
 	width: 100%;
 	background-color:white;
-	> ul {
-		margin-left:90px;
-	}
 	li {
 		margin-bottom: 0px;
 		a {
@@ -20,6 +17,10 @@ nav>ul>li>a:hover {
 	text-decoration: none;
 	color: @neutral1;
 	background-color: #f2f2f2
+}
+
+.navbar, .container {
+  padding: 0 90px;
 }
 
 /* Dropdown */
@@ -95,7 +96,9 @@ div.internal-subnav {
 }
 
 div#topics-bar {
+	padding: 3px 0;
 	ul {
+
 		li {
 			display: inline;
 			margin-right: 10px;

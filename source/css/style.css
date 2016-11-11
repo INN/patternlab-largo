@@ -2647,26 +2647,27 @@ article.latest-post {
   margin-bottom: 24px;
 }
 /* Navigation */
-nav.nav {
+nav#main-nav {
   float: left;
   border-top: 1px solid #aaa;
   border-bottom: 1px solid #aaa;
   width: 100%;
   background-color: white;
 }
-nav.nav > ul {
-  margin-left: 90px;
-}
-nav.nav li {
+nav#main-nav li {
   margin-bottom: 0px;
 }
-nav.nav li a {
+nav#main-nav li a {
   font-weight: normal;
 }
 nav > ul > li > a:hover {
   text-decoration: none;
   color: #1C1C1C;
   background-color: #f2f2f2;
+}
+.navbar,
+.container {
+  padding: 0 90px;
 }
 /* Dropdown */
 li.dropdown {
@@ -2726,6 +2727,9 @@ li.dropdown {
 div.internal-subnav {
   width: 25%;
   float: left;
+}
+div#topics-bar {
+  padding: 3px 0;
 }
 div#topics-bar ul li {
   display: inline;
