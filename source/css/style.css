@@ -2691,6 +2691,7 @@ li.dropdown {
 .dropdown-menu-container li > a {
   padding: 5px 15px;
   width: auto;
+  line-height: 1.5;
   display: block;
   white-space: nowrap;
 }
