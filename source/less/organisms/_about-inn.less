@@ -51,8 +51,19 @@ section.normal {
 	height: auto;
 }
 
+/*Responsive Media Queries*/
+
 @media (max-width: 980px) {
 	.row-fluid .span4 {
 		padding: 1.5em 2em;
+	}
+}
+
+@media (max-width: 600px) {
+	.row-fluid .span4 {
+		width: 100%;
+		margin: 0;
+		clear: both;
+		padding: 0.5em 10%;
 	}
 }
