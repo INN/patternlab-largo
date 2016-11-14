@@ -3178,6 +3178,11 @@ div#homepage-top-right {
 section.normal {
   height: auto;
 }
+@media (max-width: 980px) {
+  .row-fluid .span4 {
+    padding: 1.5em 2em;
+  }
+}
 #hire-us {
   text-align: center;
   padding: 3em;
