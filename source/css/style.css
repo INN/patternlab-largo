@@ -2810,12 +2810,15 @@ div#topics-bar ul a {
 .navbar.sticky-navbar li a {
   line-height: 56px;
   color: #484848;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 10px;
   padding-right: 10px;
   font-weight: normal;
 }
 .navbar.sticky-navbar li a:hover {
   background-color: #f2f2f2;
+  text-decoration: none;
 }
 .sticky-navbar .dropdown-menu li a {
   padding-top: 0;
