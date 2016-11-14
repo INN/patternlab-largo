@@ -2758,6 +2758,70 @@ div#topics-bar ul a {
   font-weight: normal;
   color: #09C9FF;
 }
+/* Sticky Nav */
+.text-input-wrapper {
+  display: block;
+  float: left;
+  width: 196px;
+}
+.navbar.sticky-navbar .nav-right .form-search .input-append button {
+  width: 50px;
+  height: 36px;
+  float: left;
+}
+.form-search {
+  position: relative;
+}
+.form-search .input-append {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.btn-navbar {
+  padding: 0 10px;
+  margin-right: 0;
+  line-height: 56px;
+  color: #484848;
+  display: block;
+  float: left;
+  background-color: transparent;
+  border: none;
+}
+.nav-right {
+  float: right;
+}
+.nav-right #header-extras {
+  float: left;
+  margin: 0;
+}
+.nav-right #header-extras .donate a span {
+  padding: 4px 8px;
+  color: white;
+  background-color: #bd261d;
+  font-weight: normal;
+}
+.nav-right #header-extras li {
+  float: left;
+  display: block;
+  margin-bottom: 0;
+}
+.navbar.sticky-navbar li a {
+  line-height: 56px;
+  color: #484848;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: normal;
+}
+.navbar.sticky-navbar li a:hover {
+  background-color: #f2f2f2;
+}
+.sticky-navbar .dropdown-menu li a {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 40px;
+}
 /* Responsive Media Queries */
 @media (max-width: 1050px) {
   .navbar,
@@ -2768,6 +2832,19 @@ div#topics-bar ul a {
 @media (max-width: 768px) {
   #main-nav,
   #site-header {
+    display: none;
+  }
+  .sticky-nav-holder {
+    border-bottom: #aaaaaa 1px solid;
+    visibility: visible;
+    opacity: 1;
+  }
+  .navbar .nav-shelf li,
+  .navbar .nav-shelf ul {
+    float: none;
+    display: block;
+  }
+  .navbar .nav-shelf .home-icon {
     display: none;
   }
 }
