@@ -3373,6 +3373,7 @@ aside#largo_staff_widget-2 h3 {
 #supporters .span4 {
   padding: 2em 2em 1em;
   text-align: center;
+  width: 31.91489361%;
 }
 #supporters h3 {
   color: #1C1C1C;
@@ -3394,6 +3395,23 @@ aside#largo_staff_widget-2 h3 {
   background-color: #EDF1F4;
   max-width: 1170px;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  #supporters {
+    padding-bottom: 2em;
+  }
+  #supporters .span4 {
+    clear: both;
+    width: 100%;
+    padding: 0 2em;
+    margin: 0;
+  }
+  #supporters li {
+    text-align: center;
+  }
+  #supporters h3 {
+    margin-bottom: 1em;
+  }
 }
 .stories article {
   border-bottom: 1px dotted #aaa;
