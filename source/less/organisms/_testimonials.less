@@ -10,6 +10,7 @@
 		padding: 0 4em;
 		font-size: 21px;
 		color: white;
+		font-family: @largo_serif;
 	}
 
 	p.credit {
@@ -19,5 +20,37 @@
 		a {
 			color: @primary;
 		}
+	}
+}
+
+@media (max-width: 900px) {
+	#testimonial {
+		p {
+		padding: 0 2em;
+		}
+
+		p.credit {
+			text-align: left;
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	#testimonial { 
+		
+		img {
+			display: block;
+			float: none;
+			clear: both;
+			margin: 0 auto 2em;
+		}
+
+		p {
+			padding: 0;
+			margin-bottom: 24px;
+			text-align: left;
+		}
+
 	}
 }

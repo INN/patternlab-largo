@@ -3354,6 +3354,7 @@ aside#largo_staff_widget-2 h3 {
   padding: 0 4em;
   font-size: 21px;
   color: white;
+  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
 }
 #testimonial p.credit {
   text-align: right;
@@ -3362,6 +3363,28 @@ aside#largo_staff_widget-2 h3 {
 }
 #testimonial p.credit a {
   color: #09C9FF;
+}
+@media (max-width: 900px) {
+  #testimonial p {
+    padding: 0 2em;
+  }
+  #testimonial p.credit {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 700px) {
+  #testimonial img {
+    display: block;
+    float: none;
+    clear: both;
+    margin: 0 auto 2em;
+  }
+  #testimonial p {
+    padding: 0;
+    margin-bottom: 24px;
+    text-align: left;
+  }
 }
 #supporters {
   background-color: #EDF1F4;
