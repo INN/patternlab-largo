@@ -1,8 +1,39 @@
-.inline-container input {
-	float: left;
-	margin-right: 6px;
-	padding: 12px 10px;
-	width: 400px;
+ .interstitial.branding { 
+ 	
+ 	input.btn {
+ 		display: block;
+ 		float: left;
+ 		clear: none;
+ 		padding: 13px 1em;
+ 		width: 200px;
+ 		line-height: 1.5;
+ 	}
+
+ 	input {
+ 		float: left;
+		margin-right: 6px;
+		padding: 12px 10px;
+		width: 400px;
+		font-size: 1em;
+		margin-bottom: 10px;
+
+	}
+
+	h3 {
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 2em;
+		margin-bottom: 0.25em;
+		text-align: left;
+	}
+
+	p {
+		font-size: 19.55px;
+		margin: 0 0 24px;
+		font-family: @largo_sans;
+		line-height: 1.5;
+		color: white;
+	}
 }
 
 button.newsletter-submit {
@@ -11,14 +42,25 @@ button.newsletter-submit {
 	width: 200px;
 }
 
-fieldset {
-	> h3 {
-	font-weight:bold;
-	text-transform: uppercase;
-	margin-bottom: 12px;
-	}
-	> p {
-		font-family: @largo_sans;
-		color:white;
+#email img {
+	display: block;
+	width: 15%;
+	height: auto;
+}
+
+@media (max-width: 700px) {
+	.interstitial.branding { 
+		img {
+			float: none;
+			margin: 0 auto 1em;
+		}
+
+		h3, p {
+			text-align: center;
+		}
+
+		input, input.btn {
+			float: none;
+		}
 	}
 }

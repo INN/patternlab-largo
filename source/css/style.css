@@ -2870,25 +2870,59 @@ div#topics-bar ul a {
     display: none;
   }
 }
-.inline-container input {
+.interstitial.branding input.btn {
+  display: block;
+  float: left;
+  clear: none;
+  padding: 13px 1em;
+  width: 200px;
+  line-height: 1.5;
+}
+.interstitial.branding input {
   float: left;
   margin-right: 6px;
   padding: 12px 10px;
   width: 400px;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+.interstitial.branding h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 0.25em;
+  text-align: left;
+}
+.interstitial.branding p {
+  font-size: 19.55px;
+  margin: 0 0 24px;
+  font-family: "effra", helvetica, sans-serif;
+  line-height: 1.5;
+  color: white;
 }
 button.newsletter-submit {
   padding: 14.5px 10px;
   position: relative;
   width: 200px;
 }
-fieldset > h3 {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 12px;
+#email img {
+  display: block;
+  width: 15%;
+  height: auto;
 }
-fieldset > p {
-  font-family: "effra", helvetica, sans-serif;
-  color: white;
+@media (max-width: 700px) {
+  .interstitial.branding img {
+    float: none;
+    margin: 0 auto 1em;
+  }
+  .interstitial.branding h3,
+  .interstitial.branding p {
+    text-align: center;
+  }
+  .interstitial.branding input,
+  .interstitial.branding input.btn {
+    float: none;
+  }
 }
 div#footer-bg {
   background-color: #1C1C1C;
@@ -3139,6 +3173,13 @@ h4.section-title {
 div#quick-links {
   margin-bottom: 48px;
   display: block;
+}
+@media (max-width: 600px) {
+  #quick-links li {
+    display: list-item;
+    margin-bottom: 0.5em;
+    margin-right: 0;
+  }
 }
 #upcoming-events {
   font-family: "effra", helvetica, sans-serif;
