@@ -1,6 +1,6 @@
 /*Donation Form*/
 
-label.gfield_label {
+.gfield_label, {
   font-family: @largo_serif;
   font-size: 0.875em;
 }
@@ -21,21 +21,38 @@ li#form-4 {
   margin-top: 48px;
 }
 
+p#donate {
+  font-size: 1.2em;
+  margin-bottom: 24px;
+  a {
+    font-weight: normal;
+    font-family: @largo_serif;
+    color: @primary;
+  }
+}
+
+.gform_wrapper {
+  overflow: inherit;
+  margin: 16px 0;
+  max-width: 100%;
+}
+
 /*Checkboxes*/
+
 ul#credit-card-fee {
   padding-top: 16px;
   padding-bottom: 16px;
-}
+  
+  label {
+    margin: 4px 0 0 10px;
+    max-width: 95%;
+    font-size: 14px;
+    font-weight: bold;
+  }
 
-#credit-card-fee label {
-  margin: 4px 0 0 10px;
-  max-width: 95%;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-#credit-card-fee input {
-  margin-right:1em;
+  input {
+    margin-right:1em;
+  }
 }
 
 /*Radio Buttons*/
@@ -44,69 +61,37 @@ ul.donate-now {
   display: inline;
   z-index: 100;
   margin-left: 6px;
-}
+  
+  li {
+    display: inline;
+    margin-right: 12px;
+    width: auto;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  input[type="radio"] {
+    display:none;
+  }
 
-.donate-now li {
-  display: inline;
-  margin-right: 12px;
-  width: auto;
-  padding: 0;
-  overflow: hidden;
-}
+  label {
+    padding: 7px 24px;
+    margin: 0;
+    background-color: @primary;
+    font-size: 18px;
+    font-family: @largo_sans;
+    color:white;
+    display: inline-block;
+  }
 
-.donate-now input[type="radio"] {
-  display:none;
-}
-
-.donate-now label {
-  padding: 7px 24px;
-  margin: 0;
-  background-color: @primary;
-  font-size: 18px;
-  font-family: @largo_sans;
-  color:white;
-  display: inline-block;
-}
-
-.donate-now input[type="radio"]:checked + label {
-  background-color: @accent5;
-}
-
-/*.donate-now li {
-  float:left;
-  margin: 0 5px 0 0;
-  width: 130px;
-  height:45px;
-  position: relative;
-  background-color: @primary;
-  color:white;
-  font-family: @largo_sans;
-  vertical-align: middle;
-}
-
-.donate-now label, .donate-now input {
-  display: block;
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.donate-now input[type="radio"] {
-  visibility: hidden;
+  .donate-now input[type="radio"]:checked + label {
+    background-color: @accent5;
+  }
 }
 
 .donate-now input[type="radio"]:checked + label {
   background-color: @accent5;
-}*/
-
-/*input#per-year {
-  display: none;
-}*/
-
+}
 
 /*Select Menu*/
 
@@ -130,9 +115,6 @@ span#expiration-month-and-year {
 #exp-date-security-code {
   margin-bottom: 12px;
 }
-/*input[name=two-inputs-one-line] {
-  width:50%;
-}*/
 
 .first-name, .last-name {
   display:inline-block;
@@ -148,6 +130,8 @@ li#form-9 {
 
 /*Donation Form*/
 
-div#main {
-  clear:both;
+div#content {
+  width: 70%;
+  margin: 0 auto;
+  float: none;
 }

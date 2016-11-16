@@ -2241,14 +2241,6 @@ p.warning {
 p.information {
   color: #0FAE92;
 }
-p#donate {
-  font-size: 1.2em;
-}
-p#donate a {
-  font-weight: normal;
-  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
-  color: #09C9FF;
-}
 /* Block Quote */
 .blockquote {
   padding: 5px 15px 5px 30px;
@@ -2470,7 +2462,7 @@ dl {
   border: 1px solid #ddd;
 }
 /*Donation Form*/
-label.gfield_label {
+.gfield_label {
   font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
   font-size: 0.875em;
 }
@@ -2486,18 +2478,32 @@ input[name="input_3"] {
 li#form-4 {
   margin-top: 48px;
 }
+p#donate {
+  font-size: 1.2em;
+  margin-bottom: 24px;
+}
+p#donate a {
+  font-weight: normal;
+  font-family: "leitura-News", GEorgia, tiMes, "Times new Roman", serif;
+  color: #09C9FF;
+}
+.gform_wrapper {
+  overflow: inherit;
+  margin: 16px 0;
+  max-width: 100%;
+}
 /*Checkboxes*/
 ul#credit-card-fee {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-#credit-card-fee label {
+ul#credit-card-fee label {
   margin: 4px 0 0 10px;
   max-width: 95%;
   font-size: 14px;
   font-weight: bold;
 }
-#credit-card-fee input {
+ul#credit-card-fee input {
   margin-right: 1em;
 }
 /*Radio Buttons*/
@@ -2507,17 +2513,17 @@ ul.donate-now {
   z-index: 100;
   margin-left: 6px;
 }
-.donate-now li {
+ul.donate-now li {
   display: inline;
   margin-right: 12px;
   width: auto;
   padding: 0;
   overflow: hidden;
 }
-.donate-now input[type="radio"] {
+ul.donate-now input[type="radio"] {
   display: none;
 }
-.donate-now label {
+ul.donate-now label {
   padding: 7px 24px;
   margin: 0;
   background-color: #09C9FF;
@@ -2526,42 +2532,12 @@ ul.donate-now {
   color: white;
   display: inline-block;
 }
+ul.donate-now .donate-now input[type="radio"]:checked + label {
+  background-color: #F77710;
+}
 .donate-now input[type="radio"]:checked + label {
   background-color: #F77710;
 }
-/*.donate-now li {
-  float:left;
-  margin: 0 5px 0 0;
-  width: 130px;
-  height:45px;
-  position: relative;
-  background-color: @primary;
-  color:white;
-  font-family: @largo_sans;
-  vertical-align: middle;
-}
-
-.donate-now label, .donate-now input {
-  display: block;
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.donate-now input[type="radio"] {
-  visibility: hidden;
-}
-
-.donate-now input[type="radio"]:checked + label {
-  background-color: @accent5;
-}*/
-/*input#per-year {
-  display: none;
-}*/
 /*Select Menu*/
 .expiration-month select,
 .expiration-year select {
@@ -2582,9 +2558,6 @@ span#expiration-month-and-year {
 #exp-date-security-code {
   margin-bottom: 12px;
 }
-/*input[name=two-inputs-one-line] {
-  width:50%;
-}*/
 .first-name,
 .last-name {
   display: inline-block;
@@ -2595,8 +2568,10 @@ li#form-9 h4 {
   margin-bottom: 8px;
 }
 /*Donation Form*/
-div#main {
-  clear: both;
+div#content {
+  width: 70%;
+  margin: 0 auto;
+  float: none;
 }
 div.thumbnail-img {
   float: right;
