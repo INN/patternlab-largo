@@ -1,19 +1,21 @@
-<div id="header" class="clearfix">
-	{{> organisms-header }}
-	{{> molecules-nerds-nav }}
-</div>
-<div class="page" id="main">
-	<div role="main">
-		<div class="l-two-col clearfix">
-			<div class="span8">
-				{{> organisms-latest-posts }}
+<div id="page" class="clearfix">
+	<div id="header" class="clearfix">
+		{{> organisms-header }}
+		{{> molecules-nerds-nav }}
+	</div>
+	<div id="page">
+		<div role="main">
+			<div class="l-two-col clearfix">
+				<div class="span8">
+					{{> organisms-latest-posts }}
+				</div>
+				<aside id="sidebar">
+					{{> organisms-about-nerds }}
+					{{> organisms-our-team }}				
+					{{> organisms-friends }}
+				</aside>
 			</div>
-			<aside id="sidebar">
-				{{> organisms-about-nerds }}
-				{{> organisms-our-team }}				
-				{{> organisms-friends }}
-			</aside>
 		</div>
 	</div>
+	{{> organisms-footer }}
 </div>
-{{> organisms-footer }}

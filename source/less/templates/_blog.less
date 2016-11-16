@@ -15,3 +15,25 @@ aside#sidebar {
 	float: left;
 	margin-left: 4%;
 }
+
+@media (max-width: 768px) {
+	aside#sidebar {
+		clear: both;
+		float: none;
+		width: 100%;
+		margin: 0 0 24px;
+	}
+
+	div.span8 {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+}
+
+@media (max-width: 1220px) {
+	[role=main] {
+		max-width: 1170px;
+		padding: 0 2.5%;
+		padding-top: 2%;
+	}
+}

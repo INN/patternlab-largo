@@ -100,6 +100,11 @@ body {
   font-family: "effra", helvetica, sans-serif;
   color: #333333;
 }
+#page {
+  max-width: 1170px;
+  padding: 0 2.5%;
+  padding-bottom: 18px;
+}
 /* Links */
 a {
   color: #333333;
@@ -2879,6 +2884,9 @@ div#topics-bar ul a {
   .navbar .nav-shelf .home-icon {
     display: none;
   }
+  .hidden-phone {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   .sticky-nav-holder {
@@ -3667,4 +3675,23 @@ aside#sidebar {
   box-sizing: border-box;
   float: left;
   margin-left: 4%;
+}
+@media (max-width: 768px) {
+  aside#sidebar {
+    clear: both;
+    float: none;
+    width: 100%;
+    margin: 0 0 24px;
+  }
+  div.span8 {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 1220px) {
+  [role=main] {
+    max-width: 1170px;
+    padding: 0 2.5%;
+    padding-top: 2%;
+  }
 }
