@@ -100,11 +100,6 @@ body {
   font-family: "effra", helvetica, sans-serif;
   color: #333333;
 }
-#page {
-  max-width: 1170px;
-  padding: 0 2.5%;
-  padding-bottom: 18px;
-}
 /* Links */
 a {
   color: #333333;
@@ -3691,7 +3686,6 @@ aside#sidebar {
 @media (max-width: 1220px) {
   [role=main] {
     max-width: 1170px;
-    padding: 0 2.5%;
-    padding-top: 2%;
+    padding: 2% 2.5%;
   }
 }
