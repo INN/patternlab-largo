@@ -2473,7 +2473,7 @@ input[name="input_2"] {
   width: 48.7%;
 }
 input[name="input_3"] {
-  width: 98.5%;
+  width: 100%;
 }
 li#form-4 {
   margin-top: 48px;
@@ -2527,7 +2527,7 @@ ul.donate-now label {
   padding: 7px 24px;
   margin: 0;
   background-color: #09C9FF;
-  font-size: 18px;
+  font-size: 1em;
   font-family: "effra", helvetica, sans-serif;
   color: white;
   display: inline-block;
@@ -2562,7 +2562,7 @@ span#expiration-month-and-year {
 .last-name {
   display: inline-block;
   width: 50%;
-  padding-right: 14px;
+  margin-bottom: 12px;
 }
 li#form-9 h4 {
   margin-bottom: 8px;
@@ -2572,6 +2572,45 @@ div#content {
   width: 70%;
   margin: 0 auto;
   float: none;
+}
+.first-name-last-name span:first-child {
+  padding-right: 14px;
+}
+/*Mobile Responsive Media Queries*/
+@media (max-width: 610px) {
+  ul.donate-now li {
+    display: block;
+    clear: both;
+    float: none;
+    text-align: center;
+  }
+  ul.donate-now li label {
+    width: 100%;
+  }
+  input[name="input_1"] {
+    width: 100%;
+  }
+}
+@media (max-width: 831px) {
+  ul.donate-now li {
+    margin-right: 6px;
+  }
+  ul.donate-now li label {
+    padding: 7px 16px;
+  }
+}
+@media (max-width: 768px) {
+  div#content {
+    width: 90%;
+  }
+  .first-name,
+  .last-name,
+  input[name="input_2"] {
+    width: 100%;
+  }
+  .first-name-last-name span:first-child {
+    padding-right: 0;
+  }
 }
 div.thumbnail-img {
   float: right;
