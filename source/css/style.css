@@ -3138,6 +3138,28 @@ input[type="submit"] {
     padding: 9px 20px;
   }
 }
+.member-nav {
+  vertical-align: middle;
+  padding: 0.8em;
+  background-color: #EDF1F4;
+  margin: 1em 0;
+  text-align: center;
+  clear: both;
+}
+.member-nav label {
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 0.3em;
+}
+.member-nav select {
+  display: inline-block;
+  margin: 0 0.25em;
+  width: 22%;
+  max-width: 240px;
+}
+.member-nav a {
+  color: #09C9FF;
+}
 #site-header {
   margin: 24px 0;
   width: auto;
