@@ -2604,9 +2604,9 @@ div#content {
     width: 100%;
   }
 }
-@media (max-width: 831px) {
+@media (max-width: 881px) {
   ul.donate-now li {
-    margin-right: 6px;
+    margin-right: 5px;
     margin-bottom: 0px;
   }
   ul.donate-now li label {
@@ -2624,6 +2624,11 @@ div#content {
   }
   .first-name-last-name span:first-child {
     padding-right: 0;
+  }
+}
+@media (max-width: 998px) {
+  div#main.donation-page {
+    padding: 0;
   }
 }
 div.thumbnail-img {
@@ -3292,6 +3297,10 @@ section.normal {
   .row-fluid .span4 {
     padding: 1.5em 2em;
   }
+  div#main {
+    width: 100%;
+    padding: 0 10%;
+  }
 }
 @media (max-width: 600px) {
   .row-fluid .span4 {
@@ -3504,6 +3513,14 @@ aside#largo_staff_widget-2 h3 {
 #content.stories h1 {
   font-size: 44px;
   font-weight: bold;
+}
+@media (max-width: 980px) {
+  #content.stories {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    float: none;
+  }
 }
 #content.has-menu {
   margin-left: 0;
@@ -3749,9 +3766,11 @@ aside#sidebar {
     padding: 2% 2.5%;
   }
 }
-@media (max-width: 980px) {
-  #content.stories {
+@media screen and (max-width: 980px) {
+  #main #content.has-menu {
     width: 100%;
-    padding: 0 10%;
+    padding: 0;
+    margin: 0;
+    float: none;
   }
 }
