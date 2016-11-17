@@ -173,7 +173,6 @@ p.information {
 	border-left: 1px solid #aaaaaa;
 	padding-left: 40px;
 	color:#555555;
-	float: right;
 	margin: 6px 0 12px 20px;
 	font-style: italic;
 	font-size: 24px;
@@ -202,6 +201,21 @@ p.information {
 	width: 100%;
 	margin: 20px auto;
 	background: #ddd;
+}
+
+@media (max-width: 768px) {
+	aside.type-pull-quote {
+		padding: 20px 10px;
+		text-align: center;
+		border: none;
+		border-top: 3px solid #555555;
+		border-bottom: 3px solid #555555;
+		margin: 0 auto 1em;
+		max-width: 100%;
+		float: none;
+		clear: both;
+		width: 100%;
+	}
 }
 
 /* Caption */

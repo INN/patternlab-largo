@@ -2257,7 +2257,6 @@ p.information {
   border-left: 1px solid #aaaaaa;
   padding-left: 40px;
   color: #555555;
-  float: right;
   margin: 6px 0 12px 20px;
   font-style: italic;
   font-size: 24px;
@@ -2285,6 +2284,20 @@ p.information {
   width: 100%;
   margin: 20px auto;
   background: #ddd;
+}
+@media (max-width: 768px) {
+  aside.type-pull-quote {
+    padding: 20px 10px;
+    text-align: center;
+    border: none;
+    border-top: 3px solid #555555;
+    border-bottom: 3px solid #555555;
+    margin: 0 auto 1em;
+    max-width: 100%;
+    float: none;
+    clear: both;
+    width: 100%;
+  }
 }
 /* Caption */
 p.caption {
@@ -2773,6 +2786,11 @@ div#topics-bar ul a {
   font-weight: normal;
   color: #09C9FF;
 }
+@media (max-width: 980px) {
+  .internal-subnav {
+    display: none;
+  }
+}
 /* Sticky Nav */
 .text-input-wrapper {
   display: block;
@@ -3106,6 +3124,14 @@ input[type="submit"] {
   width: auto;
   border: none;
   background-color: #09C9FF;
+}
+@media screen and (max-width: 480px) {
+  input[type="email"] {
+    width: 180px;
+  }
+  aside#newsletter-signup-bottom .btn {
+    padding: 9px 20px;
+  }
 }
 #site-header {
   margin: 24px 0;
@@ -3462,6 +3488,10 @@ aside#largo_staff_widget-2 h3 {
 .entry-content h2 a:hover {
   color: #09C9FF;
 }
+.stories .entry-content p {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
 .entry-content .top-tag a {
   font-weight: normal;
 }
@@ -3521,10 +3551,24 @@ header .top-tag {
   position: absolute;
   left: 0;
 }
+@media (max-width: 768px) {
+  header h1.entry-title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}
 article #whole-article {
   padding: 0 17.021276594%;
   margin-bottom: 24px;
   display: block;
+}
+@media (max-width: 979px) {
+  article #whole-article {
+    padding: 0 6.38297872%;
+  }
+}
+article aside.type-pull-quote {
+  float: right;
 }
 aside#largo-related-posts-widget-2 {
   margin-bottom: 48px;
@@ -3561,6 +3605,17 @@ aside#largo-related-posts-widget-2 img {
 aside#largo-related-posts-widget-2 li {
   list-style: none;
   display: block;
+}
+/*Responsive Media Queries*/
+@media only screen and (max-width: 640px) {
+  aside#largo-related-posts-widget-2 p {
+    font-size: 14.4px;
+  }
+  aside#largo-related-posts-widget-2 h4 {
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 4.6px;
+  }
 }
 .previous {
   width: 48%;
@@ -3655,6 +3710,11 @@ aside#text-4 h3 {
 div.article-bottom {
   margin: 0 17.021276594%;
 }
+@media only screen and (max-width: 979px) {
+  div.article-bottom {
+    margin: 0 6.38297872%;
+  }
+}
 div.span8 {
   width: 65%;
   margin-left: 0;
@@ -3687,5 +3747,11 @@ aside#sidebar {
   [role=main] {
     max-width: 1170px;
     padding: 2% 2.5%;
+  }
+}
+@media (max-width: 980px) {
+  #content.stories {
+    width: 100%;
+    padding: 0 10%;
   }
 }
