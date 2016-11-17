@@ -1,0 +1,53 @@
+.inn_member.directory {
+	margin-bottom: 1em;
+	width: 20%;
+	padding: 2.5%;
+	float: left;
+	text-align: center;
+	
+	img {
+		display: block;
+		max-width: 100%;
+		float: none;
+		margin: 0 auto 1em;
+	}
+
+	h3 {
+		clear: both;
+		font-size: 21px;
+		margin-bottom: .5em;
+		a { 
+			color: @neutral2;
+		}
+	}
+
+	p, p a {
+		font-family: @largo_sans;
+		font-size: 16px;
+		margin-bottom: 0.5em;
+		text-align: center;
+	}
+
+	p a {
+		font-weight: normal;
+		color: @primary;
+	}
+
+	.social {
+		margin-bottom: 0.5em;
+		li {
+			display: inline;
+			margin-bottom: 12px;
+			a i {
+				color: @neutral2;
+			}
+		}
+	}
+}
+
+@media (max-width: 850px) {
+	.inn_member.directory {
+		width: 40%;
+		padding: 5%;
+	}
+}

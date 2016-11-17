@@ -3160,6 +3160,54 @@ input[type="submit"] {
 .member-nav a {
   color: #09C9FF;
 }
+.inn_member.directory {
+  margin-bottom: 1em;
+  width: 20%;
+  padding: 2.5%;
+  float: left;
+  text-align: center;
+}
+.inn_member.directory img {
+  display: block;
+  max-width: 100%;
+  float: none;
+  margin: 0 auto 1em;
+}
+.inn_member.directory h3 {
+  clear: both;
+  font-size: 21px;
+  margin-bottom: .5em;
+}
+.inn_member.directory h3 a {
+  color: #777777;
+}
+.inn_member.directory p,
+.inn_member.directory p a {
+  font-family: "effra", helvetica, sans-serif;
+  font-size: 16px;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.inn_member.directory p a {
+  font-weight: normal;
+  color: #09C9FF;
+}
+.inn_member.directory .social {
+  margin-bottom: 0.5em;
+}
+.inn_member.directory .social li {
+  display: inline;
+  margin-bottom: 12px;
+}
+.inn_member.directory .social li a i {
+  color: #777777;
+}
+@media (max-width: 850px) {
+  .inn_member.directory {
+    width: 40%;
+    padding: 5%;
+  }
+}
 #site-header {
   margin: 24px 0;
   width: auto;
@@ -3745,6 +3793,12 @@ aside#text-4 h3 {
 #friends-widget ul strong a {
   color: #909799;
   font-weight: bold;
+}
+.member-directory header.entry-header h1.entry-title {
+  text-align: center;
+  margin-bottom: 0.5em;
+  line-height: 1;
+  font-size: 44px;
 }
 div.article-bottom {
   margin: 0 17.021276594%;
