@@ -225,7 +225,8 @@ div#topics-bar {
 	}
 }
 
-.navbar.sticky-navbar li.donate a, .navbar.sticky-navbar li#sticky-nav-search a {
+.navbar.sticky-navbar li.donate a, 
+.navbar.sticky-navbar li#sticky-nav-search a {
 	&:hover {
 		background-color: white;
 	}
@@ -233,13 +234,15 @@ div#topics-bar {
 
 /* Responsive Media Queries */
 @media (max-width: 1050px)  {
-	.navbar, .container {
+	.navbar, 
+	.container {
 		padding: 0 10px;
 	}
 }
 
 @media (max-width: 768px) {
-	#main-nav, #site-header {
+	#main-nav, 
+	#site-header {
 		display: none;
 	}
 
@@ -249,10 +252,13 @@ div#topics-bar {
 		opacity: 1;
 	}
 
-	.navbar .nav-shelf li, .navbar .nav-shelf ul {
-		float: none;
-		display: block;
-	}
+	.navbar .nav-shelf {
+		ul, 
+		li {
+			float: none;
+			display: block;
+		}
+	} 
 
 	.navbar .nav-shelf .home-icon {
 		display: none;

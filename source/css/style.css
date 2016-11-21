@@ -79,7 +79,8 @@ figure {
 /* theme colors */
 /* cmyk colors */
 /* secondary colors */
-/* theme neutrals */
+/* brand neutrals */
+/* website neutrals */
 /* errors, alerts, etc */
 /*  FONTS  */
 /*------------------------------------*\
@@ -2365,9 +2366,6 @@ p.description {
   text-decoration: none;
   background-color: #00b5e8;
 }
-a.btn:hover {
-  text-decoration: none;
-}
 .btn.alternate {
   background-color: #F77710;
   color: white;
@@ -2894,8 +2892,8 @@ div#topics-bar ul a {
     visibility: visible;
     opacity: 1;
   }
-  .navbar .nav-shelf li,
-  .navbar .nav-shelf ul {
+  .navbar .nav-shelf ul,
+  .navbar .nav-shelf li {
     float: none;
     display: block;
   }
