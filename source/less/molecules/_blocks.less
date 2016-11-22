@@ -3,12 +3,6 @@ div.thumbnail-img {
 	margin: 0 0 10px 20px;
 }
 
-@media all and (max-width: 46.8em) {
-div.thumbnail-img {
-	max-width: 50%;
-}
-}
-
 .entry-content {
 	h2 {
 		margin-bottom: .5em;
@@ -51,13 +45,21 @@ div.thumbnail-img {
 	}
 }
 
-@media screen and (max-width: 768px) {
-	#hero {
-		display: none;
+article.latest-post {
+	border-bottom: 1px dotted @neutral4;
+	margin-bottom: 24px;
+}
+
+/*Responsive Media Queries*/
+
+@media (max-width: 46.8em) {
+	div.thumbnail-img {
+		max-width: 50%;
 	}
 }
 
-article.latest-post {
-	border-bottom: 1px dotted #aaa;
-	margin-bottom: 24px;
+@media (max-width: 768px) {
+	#hero {
+		display: none;
+	}
 }
