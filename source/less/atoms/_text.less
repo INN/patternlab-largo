@@ -1,31 +1,34 @@
 /* Headings */
 h1 {
 	font-size: 3.5em;
-	margin-bottom: 24px;
 }
 
 h2 {
 	font-size: 2.5em;
-	margin-bottom: 24px;
 }
 
 h3 {
 	font-size: 2em;	
-	margin-bottom: 24px;
 }
 
 h4 {
 	font-size: 1.5em;
-	margin-bottom: 24px;
 }
 
 h5 {
 	font-size: 1em;
-	margin-bottom: 24px;
 }
 
 h6 {
 	font-size: .75em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	margin-bottom: 24px;
 }
 
@@ -99,10 +102,6 @@ a {
 	}
 }
 
-a:hover {
-	
-}
-
 /* Paragraph */
 p {
 	color: @neutral2;
@@ -138,7 +137,10 @@ p.intro {
 	font-weight:normal;
 }
 
-p.error, .valid, .warning, .information {
+p.error, 
+.valid, 
+.warning, 
+.information {
 	font-family: @largo_sans;
 	font-weight: bold;
 }
@@ -159,7 +161,7 @@ p.information {
 .blockquote {
 	padding: 5px 15px 5px 30px;
 	margin: 24px;
-	border-left:5px solid #ddd;
+	border-left:5px solid @neutral6;
 	p {
 		font-size: 1em;
 		font-style: normal;
@@ -170,9 +172,9 @@ p.information {
 /* Pull Quote */
 
 .type-pull-quote {
-	border-left: 1px solid #aaaaaa;
+	border-left: 1px solid @neutral7;
 	padding-left: 40px;
-	color:#555555;
+	color:@neutral7;
 	margin: 6px 0 12px 20px;
 	font-style: italic;
 	font-size: 24px;
@@ -184,7 +186,7 @@ p.information {
 		height: 1px;
 		width: 100%;
 		margin: 20px auto;
-		background: #ddd;
+		background: @neutral6;
 	}
 	a {
 		color:@primary;
@@ -200,7 +202,7 @@ p.information {
 	height: 1px;
 	width: 100%;
 	margin: 20px auto;
-	background: #ddd;
+	background: @neutral6;
 }
 
 @media (max-width: 768px) {
@@ -208,8 +210,8 @@ p.information {
 		padding: 20px 10px;
 		text-align: center;
 		border: none;
-		border-top: 3px solid #555555;
-		border-bottom: 3px solid #555555;
+		border-top: 3px solid @neutral7;
+		border-bottom: 3px solid @neutral7;
 		margin: 0 auto 1em;
 		max-width: 100%;
 		float: none;
@@ -252,7 +254,11 @@ h3.widget-title{
 		margin-right: 0.5em;
 	}
 
-	ul li.icon-twitter, li.icon-facebook, li.icon-linkedin, li.icon-google-plus, li.author-posts-links {
+	ul li.icon-twitter, 
+	li.icon-facebook, 
+	li.icon-linkedin, 
+	li.icon-google-plus, 
+	li.author-posts-links {
 		width: 36px;
 		color: @primary;
 	}
@@ -261,14 +267,3 @@ h3.widget-title{
 aside#largo-author-widget-2 {
 	margin-bottom: 48px;
 }
-
-/*
-p.description {
-	color: @neutral2;
-	font-size: 16px;
-	font-family: @largo_serif;
-	line-height: 1.5;
-	margin-bottom: 24px;
-	text-align: left;
-	text-rendering:optimizeLegibility;
-} */
