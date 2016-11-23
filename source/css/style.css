@@ -3225,10 +3225,16 @@ input[type="submit"] {
 .inn_member.directory .social li a i {
   color: #777777;
 }
+.count-4 {
+  clear: both;
+}
 @media (max-width: 768px) {
   .inn_member.directory {
     width: 50%;
     padding: 5%;
+  }
+  .count-2 {
+    clear: both;
   }
 }
 #header-search {
