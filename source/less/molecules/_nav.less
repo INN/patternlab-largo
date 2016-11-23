@@ -234,14 +234,14 @@ div#topics-bar {
 }
 
 /* Responsive Media Queries */
-@media (max-width: 1050px)  {
+@media @break-large  {
 	.navbar, 
 	.container {
 		padding: 0 10px;
 	}
 }
 
-@media (max-width: 768px) {
+@media @break-medium {
 	#main-nav, 
 	#site-header {
 		display: none;
@@ -270,7 +270,7 @@ div#topics-bar {
 	}
 }
 
-@media (min-width: 768px) {
+@media @hide-medium {
 
 	.sticky-nav-holder {
 		display: none;
