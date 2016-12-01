@@ -1,0 +1,42 @@
+.stories article {
+	border-bottom: 1px dotted @neutral4;
+	margin-bottom: 24px;
+	display: block;
+}
+
+.entry-content {
+	h2 a {
+		&:hover {
+			color: @primary;
+		}
+	}
+}
+
+.stories .entry-content p {
+	font-size: 16px;
+	margin-bottom: 12px;
+}
+.entry-content .top-tag a {
+	font-weight: normal;
+}
+
+#content.stories {
+	margin-left: 0;
+	padding-left: 80px;
+	width:75%;
+	float:left;
+
+	h1 {
+		font-size: 44px;
+		font-weight: bold;
+	}
+}
+
+@media @break-large {
+  #content.stories {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    float: none;
+  }
+}

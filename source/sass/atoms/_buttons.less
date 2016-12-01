@@ -1,0 +1,66 @@
+
+.btn, 
+.newsletter-submit {
+  .button;
+  background-color: @primary;
+  color: @white;
+  &:hover {
+  	background-color: @hover1;
+  }
+}
+
+.btn.alternate {
+	background-color: @accent5;
+	color: @white;
+	&:hover {
+		background-color: @hover2;
+		color: @white;
+	}
+}
+
+.btn-next {
+	.button;
+	background-color: @neutral5;
+	color: black;
+	&:hover {
+		background-color: @neutral3;
+		color:@white;
+		text-decoration: none;
+	}
+}
+
+.more-by-author{
+	font-size: 13px;
+	background-color: @neutral1;
+	padding: 3px 10px;
+	font-weight:bold;
+	color:@white;
+	&:hover {
+		text-decoration: none;
+		background-color: @neutral3;
+		color:@white;
+	}
+}
+
+.inline-form input[type=submit],
+.inline-form button,
+.inline-form .btn {
+  font-size: 0.875em;
+  padding: 0.65rem 1.3rem;
+  background: @primary;
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: auto;
+  &:hover {
+  	background-color: @hover1;
+  }
+}
+
+button.newsletter-submit {
+	padding: 1em 1.5rem;
+}
+button.search-submit {
+	position:absolute;
+}

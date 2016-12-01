@@ -1,0 +1,38 @@
+div.span8 {
+	width: 65%;
+	margin-left: 0;
+	display: block;
+	min-height: 28px;
+	box-sizing: border-box;
+	float: left;
+}
+
+aside#sidebar {
+	width: 31%;
+	display: block;
+	min-height: 28px;
+	box-sizing: border-box;
+	float: left;
+	margin-left: 4%;
+}
+
+@media @break-medium {
+	aside#sidebar {
+		clear: both;
+		float: none;
+		width: 100%;
+		margin: 0 0 24px;
+	}
+
+	div.span8 {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+}
+
+@media @break-large {
+	[role=main] {
+		max-width: 1170px;
+		padding: 2% 2.5%;
+	}
+}
