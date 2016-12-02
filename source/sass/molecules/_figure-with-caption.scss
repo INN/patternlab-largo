@@ -1,5 +1,5 @@
 div.figure-with-caption {
-	background-color: @neutral5;
+	background-color: $neutral5;
 	text-align: center;
 	width: 100%;
 	margin: 0 0 24px;
@@ -12,6 +12,6 @@ p.wp-caption-text {
 	padding-top: 4px;
 	font-size: 1em;
 	font-style: normal;
-	font-family: @largo_sans;
-	color: @neutral2;
+	font-family: $largo_sans;
+	color: $neutral2;
 }

@@ -1,5 +1,5 @@
 #supporters {
-	background-color: @neutral5;
+	background-color: $neutral5;
 	padding-top: 2em;
 	margin-bottom: 0;
 	padding-bottom: 0;
@@ -10,7 +10,7 @@
 		width: 31.91489361%;
 	}
 	h3 {
-		color:@neutral1;
+		color:$neutral1;
 		font-weight: bold;
 		background-color: transparent;
 		line-height: 1;
@@ -27,12 +27,12 @@
 }
 
 #supporters div {
-	background-color: @neutral5;
+	background-color: $neutral5;
 	max-width: 1170px;
 	margin: 0 auto;
 }
 
-@media @break-medium {
+@media $break-medium {
 	#supporters {
 		padding-bottom: 2em; 
 		.span4 {

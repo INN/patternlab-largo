@@ -1,5 +1,5 @@
 #footer-bg {
-	background-color: @neutral8;
+	background-color: $neutral8;
 	height: 100%;
 	padding-bottom: 18px;
 }
@@ -9,7 +9,7 @@
 	margin: 0 auto;
 	#boilerplate a {
 		font-weight: normal;
-		color: @neutral5;
+		color: $neutral5;
 		font-size: 14.4px;
 	}
 }
@@ -48,8 +48,8 @@ p.footer-credit {
 	margin-bottom: 0px;
 	text-align: center;
 	font-size: 14.4px;
-	font-family: @largo_sans;
-	color: @neutral4;
+	font-family: $largo_sans;
+	color: $neutral4;
 	a {
 		font-weight: normal;
 		color: @neutral5;
@@ -63,7 +63,7 @@ ul#menu-footer-bottom li {
 
 /* Responsive Media Query */
 
-@media @break-medium {
+@media $break-medium {
 	#supplementary div#footer-column-1 {
 		width: 100%;
 		float: none;

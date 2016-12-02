@@ -15,12 +15,12 @@ ul.staff-roster {
 		margin: .4em 0;
 		font-size: .9em;
 		line-height: 1.1em;
-		color:@neutral3;
-		font-family: @largo_sans;
+		color:$neutral3;
+		font-family: $largo_sans;
 	}
 
 	a {
-		color: @primary;
+		color: $primary;
 	}
 
 	p+p {
@@ -42,7 +42,7 @@ aside#largo_staff_widget-2 {
 		text-transform: uppercase;
 		margin-bottom: 8px;
 		font-weight: bold;
-		color: @neutral1;
+		color: $neutral1;
 	}
 	margin-bottom: 24px;
 } 

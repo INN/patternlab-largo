@@ -17,12 +17,12 @@
 		font-size: 21px;
 		margin-bottom: .5em;
 		a { 
-			color: @neutral2;
+			color: $neutral2;
 		}
 	}
 
 	p, p a {
-		font-family: @largo_sans;
+		font-family: $largo_sans;
 		font-size: 16px;
 		margin-bottom: 0.5em;
 		text-align: center;
@@ -30,7 +30,7 @@
 
 	p a {
 		font-weight: normal;
-		color: @primary;
+		color: $primary;
 	}
 
 	.social {
@@ -39,7 +39,7 @@
 			display: inline;
 			margin-bottom: 12px;
 			a i {
-				color: @neutral2;
+				color: $neutral2;
 			}
 		}
 	}
@@ -50,7 +50,7 @@
 	clear: both;
 }
 
-@media @break-medium {
+@media $break-medium {
 	.inn_member.directory {
 		width: 50%;
 		padding: 5%;

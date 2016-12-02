@@ -1,6 +1,6 @@
 ul li, 
 ol li {
-	font-family:@largo_serif;
+	font-family:$largo_serif;
 	font-size:1em;
 	margin-bottom: 12px;
 	line-height: 1.5;
@@ -10,12 +10,12 @@ ol li {
 }
 
 dl {
-	font-family:@largo_serif;
+	font-family:$largo_serif;
 	font-size:1em;
 	margin-bottom: 12px;
 	line-height: 2;
 }
 
 .icons-inline-list li {
-	color:@primary;
+	color:$primary;
 }

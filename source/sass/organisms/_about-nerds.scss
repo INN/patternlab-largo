@@ -5,14 +5,14 @@ aside#largo-about-widget-2 {
 		font-size: 20px;
 		font-weight: bold;
 		text-transform: uppercase;
-		color: @neutral1;
+		color: $neutral1;
 	}
 
 	p {
-		font-family: @largo_sans;
+		font-family: $largo_sans;
 		a {
 			font-weight: normal;
-			color: @primary;
+			color: $primary;
 		}
 	}
 }

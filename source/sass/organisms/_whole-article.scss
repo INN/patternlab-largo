@@ -10,7 +10,7 @@ article aside.type-pull-quote {
 
 /*Mobile Responsive Media Query*/
 
-@media @break-large {
+@media $break-large {
 	article #whole-article{ 
 		padding: 0 6.38297872%;
 	}

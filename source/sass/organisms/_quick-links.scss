@@ -8,13 +8,13 @@
 	
 	 a {
 		font-weight: normal;
-		color: @primary;
+		color: $primary;
 	}
 
 	h4 {
 		font-size: 1.833em;
 		font-weight: bold;
-		color: @neutral1;
+		color: $neutral1;
 	}
 
 	ul {
@@ -27,7 +27,7 @@ div#quick-links {
 	display: block;
 }
 
-@media @break-small {
+@media $break-small {
 	#quick-links li {
 		display: list-item;
 		margin-bottom: 0.5em;

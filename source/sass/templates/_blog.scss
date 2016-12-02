@@ -16,7 +16,7 @@ aside#sidebar {
 	margin-left: 4%;
 }
 
-@media @break-medium {
+@media $break-medium {
 	aside#sidebar {
 		clear: both;
 		float: none;
@@ -30,7 +30,7 @@ aside#sidebar {
 	}
 }
 
-@media @break-large {
+@media $break-large {
 	[role=main] {
 		max-width: 1170px;
 		padding: 2% 2.5%;

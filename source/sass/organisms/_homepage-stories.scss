@@ -1,5 +1,5 @@
 .stories article {
-	border-bottom: 1px dotted @neutral4;
+	border-bottom: 1px dotted $neutral4;
 	margin-bottom: 24px;
 	display: block;
 }
@@ -7,7 +7,7 @@
 .entry-content {
 	h2 a {
 		&:hover {
-			color: @primary;
+			color: $primary;
 		}
 	}
 }
@@ -32,7 +32,7 @@
 	}
 }
 
-@media @break-large {
+@media $break-large {
   #content.stories {
     width: 100%;
     padding: 0;

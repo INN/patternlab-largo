@@ -7,7 +7,7 @@ aside#largo-related-posts-widget-2 {
 		text-align: center;
 		text-transform: uppercase;
 		font-weight: bold;
-		color: @neutral1;
+		color: $neutral1;
 	}
 
 	h4 {
@@ -15,7 +15,7 @@ aside#largo-related-posts-widget-2 {
 		margin-bottom: 12px;
 		line-height: 1.3;
 		a {
-		 	color: @primary;
+		 	color: $primary;
 		 }
 	}
 
@@ -42,7 +42,7 @@ aside#largo-related-posts-widget-2 {
 
 /*Responsive Media Queries*/
 
-@media @break-small {
+@media $break-small {
 	aside#largo-related-posts-widget-2 {
 		p {
 			font-size: 14.4px;

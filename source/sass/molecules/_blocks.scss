@@ -15,8 +15,8 @@ div.thumbnail-img {
 }
 
 .headline {
-	color: @neutral1;
-	font-family: @largo_sans;
+	color: $neutral1;
+	font-family: $largo_sans;
 	line-height: 1;
 	margin-bottom: 24px;
 	font-weight:bold;
@@ -46,13 +46,13 @@ div.thumbnail-img {
 }
 
 article.latest-post {
-	border-bottom: 1px dotted @neutral4;
+	border-bottom: 1px dotted $neutral4;
 	margin-bottom: 24px;
 }
 
 /*Responsive Media Queries*/
 
-@media @break-medium {
+@media $break-medium {
 	div.thumbnail-img {
 		max-width: 50%;
 	}

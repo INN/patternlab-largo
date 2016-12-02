@@ -1,7 +1,7 @@
 body {
   background: #fff;
   -webkit-text-size-adjust: 100%;
-  font-family: @largo_sans;
+  font-family: $largo_sans;
   color: #333333;
 }
 
@@ -31,7 +31,7 @@ h3, .gamma {
 
 /* Subheadings */
 .subheading {
-  font-family: @largo_serif;
+  font-family: $largo_serif;
   font-weight: normal;
 }
 

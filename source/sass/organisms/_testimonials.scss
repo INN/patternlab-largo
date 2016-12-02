@@ -10,20 +10,20 @@
 		padding: 0 4em;
 		font-size: 21px;
 		color: white;
-		font-family: @largo_serif;
+		font-family: $largo_serif;
 	}
 
 	p.credit {
 		text-align: right;
-		font-family: @largo_sans;
+		font-family: $largo_sans;
 		font-size: 18px;
 		a {
-			color: @primary;
+			color: $primary;
 		}
 	}
 }
 
-@media @break-large {
+@media $break-large {
 	#testimonial {
 		p {
 		padding: 0 2em;
@@ -36,7 +36,7 @@
 	}
 }
 
-@media @break-medium {
+@media $break-medium {
 	#testimonial { 
 		
 		img {

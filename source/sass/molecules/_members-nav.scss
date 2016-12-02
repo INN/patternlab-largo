@@ -1,7 +1,7 @@
 .member-nav {
 	vertical-align: middle;
 	padding: 0.8em;
-	background-color: @neutral5;
+	background-color: $neutral5;
 	margin: 1em 0;
 	text-align: center;
 	clear: both;
@@ -17,11 +17,11 @@
 		max-width: 240px;
 	}
 	a {
-		color: @primary;
+		color: $primary;
 	}
 }
 
-@media @break-medium {
+@media $break-medium {
 	.member-nav select {
 		display: block;
 		margin: 1em auto;

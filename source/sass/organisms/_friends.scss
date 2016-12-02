@@ -4,7 +4,7 @@ aside#text-4 {
 		text-transform: uppercase;
 		margin-bottom: 8px;
 		font-weight: bold;
-		color: @neutral1;
+		color: $neutral1;
 	}
 
 	margin-bottom: 24px;
@@ -13,17 +13,17 @@ aside#text-4 {
 #friends-widget {
 
 	p {
-		font-family: @largo_sans;
+		font-family: $largo_sans;
 		font-size: 15px;
 	}
 
 	a {
-		color: @primary;
+		color: $primary;
 		font-weight: normal;
 	}
 }
 
 #friends-widget ul strong a {
-	color: @neutral3;
+	color: $neutral3;
 	font-weight: bold;
 }

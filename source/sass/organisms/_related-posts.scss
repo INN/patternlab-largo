@@ -7,10 +7,10 @@ div#homepage-top-left {
 .headline-list h5 {
 	font-size: 1.25em;
 	a {
-		color: @neutral2;
+		color: $neutral2;
 		font-weight: normal;
 		&:hover {
-			color: @primary;
+			color: $primary;
 		}
 	}
 }
@@ -23,23 +23,23 @@ div#homepage-top-left {
 h4.section-title {
 	margin-bottom: 24px;
 	font-weight: bold;
-	color: @neutral1;
+	color: $neutral1;
 	font-size: 1.833em;
 }
 
 .morelink a {
-	color: @primary;
+	color: $primary;
 	font-weight: normal;
 }
 
 /*Responsive Media Queries*/
-@media @break-large {
+@media $break-large {
 	.span6 {
 		padding: 1em 2em
 	}
 }
 
-@media @break-small {
+@media $break-small {
 	div#homepage-top-left, div#homepage-top-right {
 		width: 100%;
 		margin: 0;

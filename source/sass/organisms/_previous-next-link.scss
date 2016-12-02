@@ -46,9 +46,9 @@
 .pager a {
 	display: inline-block;
 	padding: 10px 15px;
-	color: @neutral1;
-	background-color: @neutral5;
+	color: $neutral1;
+	background-color: $neutral5;
 	&:hover {
-		background-color: @neutral2;
+		background-color: $neutral2;
 	}
 }
