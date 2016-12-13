@@ -1,4 +1,4 @@
-@media @break-large {
+@media (max-width: $break-large) {
 	#main #content.has-menu {
 		width: 100%;
 		padding: 0;

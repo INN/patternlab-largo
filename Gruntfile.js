@@ -10,7 +10,8 @@ module.exports = function (grunt) {
       argv = require('minimist')(process.argv.slice(2));
 
   // load all grunt tasks
-  grunt.loadNpmTasks('grunt-contrib-less');
+  // grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
@@ -75,6 +76,20 @@ module.exports = function (grunt) {
       }
     },
     /******************************************************
+     * SASS TASKS
+    ******************************************************/
+    sass: {
+    
+      dist: {                            // Target
+        // options: {                       // Target options
+        //   style: 'expanded'
+        // },
+        files: {
+          "source/css/style.css": "source/sass/style.scss"
+        }
+      }
+    },
+    /******************************************************
      * COPY TASKS
     ******************************************************/
     copy: {
@@ -95,18 +110,27 @@ module.exports = function (grunt) {
      * SERVER AND WATCH TASKS
     ******************************************************/
     watch: {
-      less: {
+      // less: {
+      //     files: [
+      //         path.resolve(paths().source.css + '**/*.css'),
+      //     ]
+      // },
+      sass: {
           files: [
               path.resolve(paths().source.css + '**/*.css'),
           ]
       },
       styles: {
         files: [ 
-          'source/less/style.less',
-          'source/less/*.less',
-          'source/less/**/*.less'
+          // 'source/less/style.less',
+          // 'source/less/*.less',
+          // 'source/less/**/*.less'
+          'source/sass/style.scss',
+          'source/sass/*.scss',
+          'source/sass/**/*.scss'
         ],
-        tasks: [ 'less' ],
+        //tasks: [ 'less' ],
+        tasks: [ 'sass' ],
         options: {
           spawn: false,
           livereload: true

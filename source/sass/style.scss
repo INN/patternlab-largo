@@ -29,16 +29,16 @@
 /*------------------------------------*\
     $RESET
 \*------------------------------------*/
-@import "_reset.less";
+@import "_reset.scss";
 /*------------------------------------*\
     $VARIABLES
 \*------------------------------------*/
-@import "variables/_colors.less";
-@import "variables/_typography.less";
-@import "variables/_layouts.less";
-@import "variables/_defaults.less";
-@import "variables/_breakpoints.less";
-@import "variables/_mixins.less";
+@import "variables/_colors.scss";
+@import "variables/_typography.scss";
+@import "variables/_layouts.scss";
+@import "variables/_defaults.scss";
+@import "variables/_breakpoints.scss";
+@import "variables/_mixins.scss";
 /*------------------------------------*\
     $MIXINS
 \*------------------------------------*/
@@ -52,11 +52,11 @@
 /*------------------------------------*\
     $GLOBAL ELEMENTS
 \*------------------------------------*/
-@import "_globals.less";
+@import "_globals.scss";
 /*------------------------------------*\
     $GLOBAL HELPER CLASSES
 \*------------------------------------*/
-@import "_helpers.less";
+@import "_helpers.scss";
 
 
 
@@ -636,7 +636,7 @@ td {
 \*------------------------------------*/
 /* Global Font Classes */
 .font-secondary {
-  font-family: @largo_serif;
+  font-family: $largo_serif;
 }
 
 .intro {
@@ -645,7 +645,7 @@ td {
 }
 
 .pullquote {
-  font-family: @largo_serif;
+  font-family: $largo_serif;
   font-size: 1.4375em;
 }
 
@@ -1104,7 +1104,7 @@ td {
 .acc-handle {
   background: #131313;
   color: white;
-  font-family: @largo_serif;
+  font-family: $largo_serif;
   font-weight: bold;
   display: block;
   position: relative;
@@ -1240,9 +1240,9 @@ td {
 }
 
 .alert-error {
-	color: @error;
-	border-color: @error;
-	background: fade(@error, 50%);
+	color: $error;
+	border-color: $error;
+	background: fade($error, 50%);
 }
 
 
@@ -1291,7 +1291,7 @@ input,
 button,
 select,
 textarea {
-  font-family: @largo_sans;
+  font-family: $largo_sans;
   color: #555555;
 }
 h1 {
@@ -1308,7 +1308,7 @@ input[type="search"] {
 .entry-content p,
 .entry-content ul,
 .entry-content ol {
-  font-family: @largo_serif;
+  font-family: $largo_serif;
   font-weight: 300;
 }
 h1,
@@ -1456,7 +1456,7 @@ a:hover {
 }
 #menu-footer-navigation,
 #supplementary ul.menu {
-  font-family: @largo_sans;
+  font-family: $largo_sans;
 }
 #supplementary {
   border-bottom: none;
@@ -1597,7 +1597,7 @@ a:hover {
 .alert p {
   margin-bottom: 0;
   color: #fff;
-  font-family: @largo_sans;
+  font-family: $largo_sans;
   text-align: center;
 }
 .alert p a {
@@ -1994,44 +1994,44 @@ body.normal.page .stories .top-tag {
 /*------------------------------------*\
     $ATOMS
 \*------------------------------------*/
-@import "atoms/_text.less";
-@import "atoms/_buttons.less";
-@import "atoms/_display.less";
-@import "atoms/_lists.less";
-@import "atoms/_media.less";
-@import "atoms/_forms.less";
+@import "atoms/_text.scss";
+@import "atoms/_buttons.scss";
+@import "atoms/_display.scss";
+@import "atoms/_lists.scss";
+@import "atoms/_media.scss";
+@import "atoms/_forms.scss";
 
-@import "molecules/_blocks.less";
-@import "molecules/_nav.less";
-@import "molecules/_newsletter.less";
-@import "molecules/_footer.less";
-@import "molecules/_calendar.less";
-@import "molecules/_figure-with-caption.less";
-@import "molecules/_newsletter-article-bottom.less";
-@import "molecules/_members-nav.less";
-@import "molecules/_inn-members.less";
-@import "molecules/_search.less";
+@import "molecules/_blocks.scss";
+@import "molecules/_nav.scss";
+@import "molecules/_newsletter.scss";
+@import "molecules/_footer.scss";
+@import "molecules/_calendar.scss";
+@import "molecules/_figure-with-caption.scss";
+@import "molecules/_newsletter-article-bottom.scss";
+@import "molecules/_members-nav.scss";
+@import "molecules/_inn-members.scss";
+@import "molecules/_search.scss";
 
-@import "organisms/_header.less";
-@import "organisms/_related-posts.less";
-@import "organisms/_quick-links.less";
-@import "organisms/_upcoming-events.less";
-@import "organisms/_about-inn.less";
-@import "organisms/_hire-us.less";
-@import "organisms/_our-members.less";
-@import "organisms/_our-team.less";
-@import "organisms/_testimonials.less";
-@import "organisms/_supporters.less";
-@import "organisms/_homepage-stories.less";
-@import "organisms/_article-about-inn.less";
-@import "organisms/_article-header.less";
-@import "organisms/_whole-article.less";
-@import "organisms/_read-next.less";
-@import "organisms/_previous-next-link.less";
-@import "organisms/_about-nerds.less";
-@import "organisms/_friends.less";
-@import "organisms/_member-directory.less";
+@import "organisms/_header.scss";
+@import "organisms/_related-posts.scss";
+@import "organisms/_quick-links.scss";
+@import "organisms/_upcoming-events.scss";
+@import "organisms/_about-inn.scss";
+@import "organisms/_hire-us.scss";
+@import "organisms/_our-members.scss";
+@import "organisms/_our-team.scss";
+@import "organisms/_testimonials.scss";
+@import "organisms/_supporters.scss";
+@import "organisms/_homepage-stories.scss";
+@import "organisms/_article-about-inn.scss";
+@import "organisms/_article-header.scss";
+@import "organisms/_whole-article.scss";
+@import "organisms/_read-next.scss";
+@import "organisms/_previous-next-link.scss";
+@import "organisms/_about-nerds.scss";
+@import "organisms/_friends.scss";
+@import "organisms/_member-directory.scss";
 
-@import "templates/_article.less";
-@import "templates/_blog.less";
-@import "templates/_about-inn-page.less";
+@import "templates/_article.scss";
+@import "templates/_blog.scss";
+@import "templates/_about-inn-page.scss";

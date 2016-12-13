@@ -48,7 +48,7 @@ button.newsletter-submit {
 	height: auto;
 }
 
-@media $break-medium {
+@media (max-width: $break-medium) {
 	.interstitial.branding { 
 		img {
 			float: none;

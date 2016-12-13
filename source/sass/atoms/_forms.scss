@@ -143,7 +143,7 @@ div#content {
 
 /*Mobile Responsive Media Queries*/
 
-@media $break-small {
+@media (max-width: $break-small) {
   ul.donate-now li {
     display: block;
     clear: both;
@@ -159,7 +159,7 @@ div#content {
   }
 }
 
-@media $break-medium {
+@media (max-width: $break-medium) {
   div#content {
     width: 90%;
   }
@@ -181,7 +181,7 @@ div#content {
   }
 }
 
-@media $break-large {
+@media (max-width: $break-large) {
   div#main.donation-page {
     padding: 0;
   }

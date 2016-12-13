@@ -21,7 +21,7 @@
 	}
 }
 
-@media $break-medium {
+@media (max-width: $break-medium) {
 	.member-nav select {
 		display: block;
 		margin: 1em auto;

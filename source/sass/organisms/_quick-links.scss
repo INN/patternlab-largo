@@ -27,7 +27,7 @@ div#quick-links {
 	display: block;
 }
 
-@media $break-small {
+@media (max-width: $break-small) {
 	#quick-links li {
 		display: list-item;
 		margin-bottom: 0.5em;

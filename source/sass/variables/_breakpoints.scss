@@ -1,7 +1,7 @@
 /*Mobile*/
-$break-small: ~"(max-width: 610px)";
+$break-small: 610px; //max-width
 /*Tablet*/
-$break-medium: ~"(max-width: 768px)";
-$hide-medium: ~"(min-width: 768px)";
+$break-medium: 768px; //max-width
+$hide-medium: 768px; //min-width
 /*Desktop*/
-$break-large: ~"(max-width: 998px)";
+$break-large: 998px; //max-width

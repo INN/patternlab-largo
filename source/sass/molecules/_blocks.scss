@@ -52,7 +52,7 @@ article.latest-post {
 
 /*Responsive Media Queries*/
 
-@media $break-medium {
+@media (max-width: $break-medium) {
 	div.thumbnail-img {
 		max-width: 50%;
 	}

@@ -53,7 +53,7 @@ section.normal {
 
 /*Responsive Media Queries*/
 
-@media $break-large {
+@media (max-width: $break-large) {
 	.row-fluid .span4 {
 		padding: 1.5em 2em;
 	}
@@ -64,7 +64,7 @@ section.normal {
   	}
 }
 
-@media $break-small {
+@media (max-width: $break-small) {
 	.row-fluid .span4 {
 		width: 100%;
 		margin: 0;

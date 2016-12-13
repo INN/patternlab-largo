@@ -1,7 +1,7 @@
 
 .btn, 
 .newsletter-submit {
-  .button;
+  @include button;
   background-color: $primary;
   color: $white;
   &:hover {
@@ -19,7 +19,7 @@
 }
 
 .btn-next {
-	.button;
+	@include button;
 	background-color: $neutral5;
 	color: black;
 	&:hover {

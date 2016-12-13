@@ -50,7 +50,7 @@
 	clear: both;
 }
 
-@media $break-medium {
+@media (max-width: $break-medium) {
 	.inn_member.directory {
 		width: 50%;
 		padding: 5%;

@@ -2,7 +2,7 @@ div.article-bottom {
 	margin: 0 17.021276594%;
 }
 
-@media $break-large {
+@media (max-width: $break-large) {
 	div.article-bottom {
 		margin: 0 6.38297872%;
 	}

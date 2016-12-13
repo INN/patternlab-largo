@@ -23,7 +23,7 @@
 	}
 }
 
-@media $break-large {
+@media (max-width: $break-large) {
 	#testimonial {
 		p {
 		padding: 0 2em;
@@ -36,7 +36,7 @@
 	}
 }
 
-@media $break-medium {
+@media (max-width: $break-medium) {
 	#testimonial { 
 		
 		img {

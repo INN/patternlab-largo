@@ -52,7 +52,7 @@ p.footer-credit {
 	color: $neutral4;
 	a {
 		font-weight: normal;
-		color: @neutral5;
+		color: $neutral5;
 	}
 }
 
@@ -63,7 +63,7 @@ ul#menu-footer-bottom li {
 
 /* Responsive Media Query */
 
-@media $break-medium {
+@media (max-width: $break-medium) {
 	#supplementary div#footer-column-1 {
 		width: 100%;
 		float: none;

@@ -33,13 +33,13 @@ h4.section-title {
 }
 
 /*Responsive Media Queries*/
-@media $break-large {
+@media (max-width: $break-large) {
 	.span6 {
 		padding: 1em 2em
 	}
 }
 
-@media $break-small {
+@media (max-width: $break-small) {
 	div#homepage-top-left, div#homepage-top-right {
 		width: 100%;
 		margin: 0;

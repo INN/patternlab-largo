@@ -233,14 +233,14 @@ div#topics-bar {
 }
 
 /* Responsive Media Queries */
-@media $break-large  {
+@media (max-width: $break-large)  {
 	.navbar, 
 	.container {
 		padding: 0 10px;
 	}
 }
 
-@media $break-medium {
+@media (max-width: $break-medium) {
 	#main-nav, 
 	#site-header {
 		display: none;
@@ -269,7 +269,7 @@ div#topics-bar {
 	}
 }
 
-@media $hide-medium {
+@media (min-width: $hide-medium) {
 
 	.sticky-nav-holder {
 		display: none;

@@ -41,7 +41,7 @@ input[type="submit"] {
 	background-color: $primary;
 }
 
-@media $break-small {
+@media (max-width: $break-small) {
 	input[type="email"] {
 		width: 180px;
 	}
