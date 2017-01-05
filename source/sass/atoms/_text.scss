@@ -1,3 +1,74 @@
+/*------------------------------------*\
+    $TEXT Styles
+\*------------------------------------*/
+/* Global Font Classes */
+.font-secondary {
+  font-family: $largo_serif;
+}
+
+.intro {
+  font-size: 1.0625em;
+  font-weight: bold;
+}
+
+.pullquote {
+  font-family: $largo_serif;
+  font-size: 1.4375em;
+}
+
+.text a {
+  text-decoration: underline;
+}
+.text ul {
+  list-style: disc;
+  margin: 0 0 1rem 1.2em;
+}
+.text ul ul {
+  margin-bottom: 0;
+}
+.text ol {
+  list-style: decimal;
+  margin: 0 0 1rem 1.2em;
+}
+.text ol ol {
+  margin-bottom: 0;
+}
+
+/* Review Grade Tile */
+.grade {
+  display: block;
+  font-weight: bold;
+  background: gray;
+  color: white;
+  min-height: 4.5rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+/* Eyebrow */
+.eyebrow {
+  background: #333333;
+  color: white;
+  padding: 0.2em;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.eyebrow-image {
+  position: relative;
+}
+.eyebrow-image img {
+  position: relative;
+  z-index: 0;
+}
+.eyebrow-image .eyebrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
 /* Headings */
 h1 {
 	font-size: 3.5em;

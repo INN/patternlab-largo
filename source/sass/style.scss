@@ -60,6 +60,9 @@
 /*------------------------------------*\
     $GLOBAL DEFAULTS CLASSES
 \*------------------------------------*/
+@import "structures/_grids.scss";
+@import "structures/_layouts.scss";
+@import "structures/_tables.scss";
 @import "_defaults.scss";
 
 
@@ -73,6 +76,7 @@
 @import "atoms/_lists.scss";
 @import "atoms/_media.scss";
 @import "atoms/_forms.scss";
+@import "atoms/_icons.scss";
 
 @import "molecules/_blocks.scss";
 @import "molecules/_nav.scss";

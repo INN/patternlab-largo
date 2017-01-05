@@ -1,3 +1,48 @@
+
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+.nav {
+  clear: both;
+  overflow: hidden;
+  max-height: 0;
+}
+.nav a {
+  display: block;
+  border-top: 1px solid #eeeeee;
+}
+.nav.active {
+  max-height: 40em;
+}
+@media all and (min-width: 46.8em) {
+  .nav {
+    max-height: none;
+    float: right;
+    clear: none;
+  }
+  .nav li {
+    float: left;
+  }
+  .nav a {
+    border: 0;
+  }
+}
+
+.pagination {
+  overflow: hidden;
+}
+.pagination li {
+  float: left;
+  border-right: 1px solid #eeeeee;
+}
+.pagination li:last-child {
+  border: 0;
+}
+.pagination a {
+  padding: 1rem;
+}
+
+
 /* Navigation */
 nav#main-nav {
 	float: left;

@@ -1,0 +1,89 @@
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+/* Layout Container */
+.lc, .header, [role=main] {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+/*------------------------------------*\
+    $TEMPLATES
+\*------------------------------------*/
+/* Two Column Layout */
+@media all and (min-width: 50em) {
+  .l-two-col .l-main {
+    float: left;
+    width: 70%;
+    padding-right: 1rem;
+  }
+}
+@media all and (max-width: 50em) {
+  .l-two-col .l-sidebar {
+    clear: both;
+  }
+}
+@media all and (min-width: 50em) {
+  .l-two-col .l-sidebar {
+    float: left;
+    width: 30%;
+    padding: 0 0 0 1rem;
+  }
+}
+
+
+/*------------------------------------*\
+    $PAGE STRUCTURE
+\*------------------------------------*/
+.header {
+  background: white;
+  padding: 0;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.logo {
+  float: left;
+  max-width: 8rem;
+  margin: 0.4rem;
+}
+@media all and (min-width: 46.8em) {
+  .logo {
+    max-width: 9rem;
+  }
+}
+
+.nav-toggle {
+  float: right;
+  display: block;
+  padding: 0.9rem 1rem 0.7rem;
+  font-size: 1.3rem;
+  line-height: 1;
+  border-left: 1px solid #dbdbdb;
+}
+@media all and (min-width: 46.8em) {
+  .nav-toggle {
+    display: none;
+  }
+}
+
+.search-form {
+  overflow: hidden;
+  max-height: 0;
+}
+@media all and (min-width: 46.8em) {
+  .search-form {
+    float: right;
+    max-height: none;
+    margin: 0.65em 0.5em 0 0;
+  }
+}
+
+
+/*------------------------------------*\
+    $MAIN CONTENT AREA
+\*------------------------------------*/
+[role=main] {
+  padding: 0.5rem 0.5rem 2rem;
+  overflow: hidden;
+}
