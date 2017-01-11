@@ -2343,9 +2343,10 @@ div.thumbnail-img {
 
 #hero-newsletter {
   background-color: #0FAE92;
-  padding: 200px; }
-  #hero-newsletter .hero-symbol {
-    opacity: .5; }
+  background: url(../../images/inn-hero-newsletter-01.svg);
+  background-position: center center;
+  background-size: cover;
+  padding: 200px 50px; }
   #hero-newsletter input[type="email"] {
     width: 300px;
     padding: 10px;
@@ -2358,6 +2359,60 @@ div.thumbnail-img {
     #hero-newsletter input[type="submit"]:hover {
       background-color: #F9D02B; }
 
+#hero-training {
+  background-color: #6066DD;
+  padding: 100px 50px;
+  background: url(../../images/inn-hero-training.svg);
+  background-position: center center;
+  background-size: cover; }
+  #hero-training .btn {
+    background-color: #FFD84F;
+    color: black;
+    display: block;
+    width: 150px;
+    margin: 0 auto 2em; }
+    #hero-training .btn:hover {
+      background-color: #F9D02B; }
+
+#upcoming-event {
+  background-color: white;
+  max-width: 650px;
+  padding: 2em 2em 2em;
+  margin: 0 auto; }
+  #upcoming-event h4 {
+    margin-bottom: 8px;
+    color: black; }
+  #upcoming-event p {
+    text-align: left;
+    font-size: 1.2em;
+    color: #1C1C1C;
+    text-shadow: none;
+    margin-bottom: 8px; }
+
+#event-calendar {
+  float: left;
+  width: 25%;
+  display: block;
+  text-align: center;
+  margin-right: 24px;
+  background-color: #EDF1F4; }
+  #event-calendar #top-month {
+    display: block;
+    background-color: #DF4646;
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding: 5px 0; }
+  #event-calendar #bottom-date {
+    display: block;
+    font-size: 3.5em;
+    font-weight: bold;
+    padding: 20px 0 20px 0; }
+
+#event-description a {
+  color: #09C9FF;
+  font-weight: normal; }
+
 article.latest-post {
   border-bottom: 1px dotted #AAAAAA;
   margin-bottom: 24px; }
@@ -2369,6 +2424,9 @@ article.latest-post {
 
   .hero {
     display: none; } }
+@media (max-width: 1200px) {
+  #hero-newsletter {
+    padding: 100px 50px; } }
 /*------------------------------------*\
     $NAVIGATION
 \*------------------------------------*/
