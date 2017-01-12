@@ -67,7 +67,7 @@ div.thumbnail-img {
 	background: url(../../images/inn-hero-newsletter-01.svg);
 	background-position: center center;
 	background-size: cover;
-	padding: 200px 50px;
+	padding: 100px 50px;
 	input[type="email"] {
 		width: 300px;
 		padding: 10px;
@@ -152,12 +152,6 @@ div.thumbnail-img {
 	}
 }
 
-#hero-branding {
-	background: $primary;
-	padding: 150px 50px;
-
-}
-
 #hero-description{
 	background-color: white;
 	max-width: 650px;
@@ -174,6 +168,12 @@ div.thumbnail-img {
 		text-shadow: none;
 		margin-bottom: 8px;
 	}
+}
+
+#mobile-date {
+	display: none;
+	color: $accent6;
+	margin-bottom: 8px;
 }
 
 #hero-branding {
@@ -244,13 +244,85 @@ article.latest-post {
 		max-width: 50%;
 	}
 
-	.hero {
+	#main-hero {
 		display: none;
 	}
 }
 
-@media (max-width: 1200px) {
-	#hero-newsletter {
-		padding: 100px 50px;
+/*Responsive Media Queries for New Hero Images*/
+
+@media (max-width: 1000px) {
+
+	.hero {
+		h2 {
+			font-size: 3em;
+		}
+
+		p{
+			font-size: 1.5em;
+		}
+	}
+	#hero-newsletter, #hero-branding, #hero-training {
+		padding: 75px 25px;
+	}
+
+	#upcoming-event {
+		max-width: 550px;
+		h4 {
+			font-size: 1.5em;
+		}
+
+		p {
+			font-size: 1em;
+		}
+	}
+
+	#event-calendar {
+		margin-right: 16px;
+		margin-bottom: 32px;
+		#top-month {
+			font-size: 1em;
+		}
+
+		#bottom-date {
+			font-size: 2.5em;
+		}
+	}
+
+
+}
+
+@media (max-width: 670px) {
+	#hero-branding {
+		.span5, .span5:first-child {
+			float: none;
+			margin: 0 auto 1em;
+			width: 100%;
+		}
+
+		#hero-description {
+			max-width: 300px;
+			padding: 1.5em 1.5em 1.5em;
+		}
+	}
+
+}
+
+@media (max-width: 525px) {
+
+	#hero-newsletter input {
+		margin-bottom: 12px;
+	}
+
+	#hero-newsletter, #hero-branding, #hero-training {
+		padding: 50px 25px;
+	}
+
+	#event-calendar {
+		display: none;
+	}
+
+	#mobile-date {
+		display: block;
 	}
 }
