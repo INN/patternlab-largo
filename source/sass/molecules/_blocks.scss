@@ -103,23 +103,23 @@ div.thumbnail-img {
 	}
 }
 
-	#upcoming-event {
-		background-color: white;
-		max-width: 650px;
-		padding: 2em 2em 2em;
-		margin: 0 auto;
-		h4 {
-			margin-bottom: 8px;
-			color: black;
-		}
-		p {
-			text-align: left;
-			font-size: 1.2em;
-			color: $neutral1;
-			text-shadow: none;
-			margin-bottom: 8px;
-		}
+#upcoming-event {
+	background-color: white;
+	max-width: 650px;
+	padding: 2em 2em 2em;
+	margin: 0 auto;
+	h4 {
+		margin-bottom: 8px;
+		color: black;
 	}
+	p {
+		text-align: left;
+		font-size: 1.2em;
+		color: $neutral1;
+		text-shadow: none;
+		margin-bottom: 8px;
+	}
+}
 
 #event-calendar {
 	float: left;
@@ -152,7 +152,85 @@ div.thumbnail-img {
 	}
 }
 
+#hero-branding {
+	background: $primary;
+	padding: 150px 50px;
 
+}
+
+#hero-description{
+	background-color: white;
+	max-width: 650px;
+	padding: 2em 2em 2em;
+	margin: 0 auto;
+	h4 {
+		margin-bottom: 8px;
+		color: black;
+	}
+	p {
+		text-align: left;
+		font-size: 1.2em;
+		color: $neutral1;
+		text-shadow: none;
+		margin-bottom: 8px;
+	}
+}
+
+#hero-branding {
+	padding: 100px 50px;
+	background: url(../../images/inn-hero-branding.svg);
+	background-position: center center;
+	background-size: cover;
+
+	.btn {
+		color: white;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		display: block;
+		max-width: 100%;
+		margin-bottom: 1em;
+	}
+
+	#about {
+		background-color: $accent6;
+		&:hover {
+			background-color: $cmyk6;
+		}
+	}
+
+	#services {
+		background-color: $accent5;
+		&:hover {
+			background-color: $cmyk5;
+		}
+	}
+
+	#donate {
+		background-color: $accent8;
+		&:hover {
+			background-color: $cmyk8;
+		}
+	}
+
+	.span5 {
+		width: 30.2%;
+		margin-left: 25px;
+		float: left;
+		text-align: center;
+		&:first-child {
+			margin-left:0;
+		}
+	}
+
+	#icon-description {
+		text-align: center;
+		font-size: 1em;
+		color: $neutral2;
+		line-height: 1.2;
+		display: block;
+	}
+}
 
 article.latest-post {
 	border-bottom: 1px dotted $neutral4;
