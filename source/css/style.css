@@ -2437,7 +2437,8 @@ div.thumbnail-img {
   padding: 100px 50px;
   background: url(../../images/inn-hero-branding.svg);
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  background-color: #09C9FF; }
   #hero-branding .btn {
     color: white;
     font-weight: bold;
@@ -2501,8 +2502,7 @@ article.latest-post {
       font-size: 1em; }
 
   #event-calendar {
-    margin-right: 16px;
-    margin-bottom: 32px; }
+    margin-right: 16px; }
     #event-calendar #top-month {
       font-size: 1em; }
     #event-calendar #bottom-date {
@@ -2514,7 +2514,9 @@ article.latest-post {
     width: 100%; }
   #hero-branding #hero-description {
     max-width: 300px;
-    padding: 1.5em 1.5em 1.5em; } }
+    padding: 1.5em 1.5em 1.5em; }
+  #hero-branding .span5 img {
+    display: none; } }
 @media (max-width: 525px) {
   #hero-newsletter input {
     margin-bottom: 12px; }

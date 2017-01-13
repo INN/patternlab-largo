@@ -181,6 +181,7 @@ div.thumbnail-img {
 	background: url(../../images/inn-hero-branding.svg);
 	background-position: center center;
 	background-size: cover;
+	background-color: $primary;
 
 	.btn {
 		color: white;
@@ -279,7 +280,6 @@ article.latest-post {
 
 	#event-calendar {
 		margin-right: 16px;
-		margin-bottom: 32px;
 		#top-month {
 			font-size: 1em;
 		}
@@ -303,6 +303,10 @@ article.latest-post {
 		#hero-description {
 			max-width: 300px;
 			padding: 1.5em 1.5em 1.5em;
+		}
+
+		.span5 img {
+			display: none;
 		}
 	}
 
